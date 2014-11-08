@@ -1,4 +1,7 @@
 import pymongo
+import os
+import json
+from config import LOAD_DATA, DROP_DATA
 
 # Connection to Mongo DB
 try:
@@ -16,25 +19,21 @@ db = conn.cthulhu
 # usuarios
 users_collection = db.users
 
-# profesiones
-proffessions_collection = db.proffessions
-
-# items
-items_collection = db.items
-
-# skills
-skills_collection = db.skills
-
-# languages
-languages_collection = db.languages
-
-# spells
-spells_collection = db.spells
-
-# books
-books_collection = db.books
+game_data_collection = db.gamedata
 
 
-if proffessions_collection.count() 
+SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
+JSON_URL = os.path.join(SITE_ROOT, "json_data/")
 
-print books_collection.count()
+if DROP_DATA:
+    db.drop_collection("gamedata")
+
+if LOAD_DATA:
+
+    # Si el config load es True
+    with open(JSON_URL + "static_data.json") as data:
+        gamedata = json.loads(data.read())
+
+        # Load all the static data
+        game_data_collection.insert(gamedata)
+        
