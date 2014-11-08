@@ -34,4 +34,7 @@ spells_collection = db.spells
 # books
 books_collection = db.books
 
-print db.books.count()
+
+
+
+print books_collection.count()
