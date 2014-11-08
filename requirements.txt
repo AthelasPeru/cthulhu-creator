@@ -15,3 +15,4 @@ requests==2.4.3
 six==1.8.0
 stormpath==1.2.4
 wsgiref==0.1.2
+*.pyc
