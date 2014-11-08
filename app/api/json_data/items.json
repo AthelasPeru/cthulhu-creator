@@ -1,0 +1,41 @@
+{
+"20-gauge-shotgun" :
+	{
+		"base_chance":"",
+		"damage":"",
+		"range":"",
+		"attack_per_round":"",
+		"bullets":"",
+		"resistance":"",
+		"cost":"",
+		"malfunction":"",
+		"era":""
+	},
+
+"Model-1882-gatling-gun" :
+	{
+		"base_chance":"",
+		"damage":"",
+		"range":"",
+		"attack_per_round":"",
+		"bullets":"",
+		"resistance":"",
+		"cost":"",
+		"malfunction":"",
+		"era":""
+	},
+
+"AK-47" :
+	{
+		"base_chance":"",
+		"damage":"",
+		"range":"",
+		"attack_per_round":"",
+		"bullets":"",
+		"resistance":"",
+		"cost":"",
+		"malfunction":"",
+		"era":""
+	}
+
+}

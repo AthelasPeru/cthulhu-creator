@@ -2,16 +2,141 @@
 	
 		"_id":"6.0",
 		"version":"6.0",
-		"proffessions":[],
-		"items":[],
+		"professions":[
+			{
+				"name": "artist",
+				"skills": [
+					"art",
+					"craft",
+					"fast_talk",
+					"history",
+					"spot_hidden"
+
+				]
+			},
+
+			{
+				"name": "dilletante",
+				"skills": [
+					"art",
+					"credit_rating",
+					"ride",
+					"other_language",
+					"shotgun"
+
+				]
+			},
+
+			{
+				"name": "programmer",
+				"skills": [
+					"computer_user", 
+					"electronics",
+					"fast_talk",
+					"library_use",
+					"physics"
+
+				]
+			}
+
+		],
+
+		"items":[
+			{
+				"name":"20-gauge-shotgun", 
+				"atributes": {
+					"base_chance":"",
+					"damage":"",
+					"range":"",
+					"attack_per_round":"",
+					"bullets":"",
+					"resistance":"",
+					"cost":"",
+					"malfunction":"",
+					"era":""
+				}
+			},	
+
+			{	
+				"name":"Model-1882-gatling-gun", 
+				"atributes": {
+					"base_chance":"",
+					"damage":"",
+					"range":"",
+					"attack_per_round":"",
+					"bullets":"",
+					"resistance":"",
+					"cost":"",
+					"malfunction":"",
+					"era":""
+				}	
+			},		
+
+			{	
+				"name":"AK-47", 
+				"atributes": {
+					"base_chance":"",
+					"damage":"",
+					"range":"",
+					"attack_per_round":"",
+					"bullets":"",
+					"resistance":"",
+					"cost":"",
+					"malfunction":"",
+					"era":""
+				}
+			}
+		],
+
 		"languages":[
 			"english",
 			"german",
 			"french"
 		],
-		"skills":[],
-		"spells":[],
-		"books":[]
+
+		"skills":[
+			"art",
+			"credit_rating",
+			"fast_talk",
+			"shotgun"
+		],
+
+		"spells":[
+			{
+				"name":"hand_of_colubra",
+				"summon_cost":{
+					"cost":"",
+					"permanent_cost":"",
+					"effect":""
+				},
+			},
+
+			{
+				"name":"seek_heart",
+				"summon_cost":{
+					"cost":"",
+					"permanent_cost":"",
+					"effect":""
+				},
+			},			
+
+			{
+				"name":"voice_of_ra",
+				"summon_cost":{
+					"cost":"",
+					"permanent_cost":"",
+					"effect":""
+				},
+			},
+
+		],
+
+		"books":[
+			"LIBER-IVONIS",
+			"ELTDOWN-SHARDS",
+			"THE-NECRONOMICON"
+
+		]
 
 },
 {
