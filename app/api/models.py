@@ -35,6 +35,6 @@ spells_collection = db.spells
 books_collection = db.books
 
 
-
+if proffessions_collection.count() 
 
 print books_collection.count()
