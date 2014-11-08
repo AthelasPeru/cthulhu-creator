@@ -1,5 +1,5 @@
-
-user = [
+{
+"user" : 
 	{
 		"id": "",
 		"email":"",
@@ -8,11 +8,9 @@ user = [
 		"username":"",
 		"password":"",
 		"character":""
-	}
+	},
 
-]
-
-general_data = [
+"general_data" :
 	{
 		"complete_name":"",
 		"profession":"",
@@ -21,11 +19,11 @@ general_data = [
 		"mental_disorde":"",
 		"gender":"",
 		"age":""
-	}
+	},
 
-]
 
-rolled_stats = [
+
+"rolled_stats" :
 	{
 		"STR":"",
 		"CON":"",
@@ -35,22 +33,19 @@ rolled_stats = [
 		"SIZ":"",
 		"INT":"",
 		"EDU":""
-	}
+	},
 
-]
-
-auto_stats =[
+"auto_stats": 
 	{
 		"SAN":"",
 		"IDEA":"",
 		"DMG":"",
 		"HP":"",
 		"MP":""
-	}
+	},
 
-]
 
-personal_data = [
+"personal_data" : 
 	{
 		"residence":"",
 		"description":"",
@@ -58,11 +53,11 @@ personal_data = [
 		"ep_of_maddness":"",
 		"wounds":"",
 		"scars":""
-	}
+	},
 
-]
 
-assets = [
+
+"assets" :
 	{
 		"income":"",
 		"cash":"",
@@ -70,10 +65,10 @@ assets = [
 		"properties":"",
 		"real_state":""
 
-	}
-]
+	},
 
-character = [
+
+"character" :
 	{
 		"general_data":"",
 		"rolled_stats":"",
@@ -88,6 +83,6 @@ character = [
 		"books":"",
 		"artifacts":"",
 		"entities":""
-	}
+	},
 
-]
+}
