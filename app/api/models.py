@@ -1,96 +1,37 @@
-from flask import Blueprint, render_template
+import pymongo
 
-user = [
-	{
-		'id': '',
-		'email':'',
-		'name':'',
-		'subname':'',
-		'username':'',
-		'password':'',
-		'character':''
-	}
-
-]
-
-general_data = [
-	{
-		'complete_name':'',
-		'profession':'',
-		'degree':'',
-		'birthplace':'',
-		'mental_disorde':'',
-		'gender':'',
-		'age':''
-	}
-
-]
-
-rolled_stats = [
-	{
-		'STR':'',
-		'CON':'',
-		'POW':'',
-		'DEX':'',
-		'AGL':'',
-		'SIZ':'',
-		'INT':'',
-		'EDU':''
-	}
-
-]
-
-auto_stats =[
-	{
-		'SAN':'',
-		'IDEA':'',
-		'DMG':'',
-		'HP':'',
-		'MP':''
-	}
-
-]
-
-personal_data = [
-	{
-		'residence':'',
-		'description':'',
-		'family':'',
-		'ep_of_maddness':'',
-		'wounds':'',
-		'scars':''
-	}
-
-]
-
-assets = [
-	{
-		'income':'',
-		'cash':'',
-		'savings':'',
-		'properties':'',
-		'real_state':''
-
-	}
-]
-
-character = [
-	{
-		'general_data':'',
-		'rolled_stats':'',
-		'auto_stats':'',
-		'profession':'',
-		'skills':'',
-		'items':'',
-		'spells':'',
-		'personal_data':'',
-		'history':'',
-		'assets':'',
-		'books':'',
-		'artifacts':'',
-		'entities':''
-	}
-
-]
+# Connection to Mongo DB
+try:
+    conn = pymongo.MongoClient()
+    print "Connected successfully!!!"
+except pymongo.errors.ConnectionFailure as e:
+    print "Could not connect to MongoDB: {}}".format(e)
 
 
+# create and connect to the database
+db = conn.cthulhu
+
+# create and select collections
+
+# usuarios
+users_collection = db.users
+
+# profesiones
+proffessions_collection = db.proffessions
+
+# items
+items_collection = db.items
+
+# skills
+skills_collection = db.skills
+
+# languages
+languages_collection = db.languages
+
+# spells
+spells_collection = db.spells
+
+# books
+books_collection = db.books
+
+print db.books.count()
