@@ -30,6 +30,7 @@ if DROP_DATA:
 
 if LOAD_DATA:
 
+
     # Si el config load es True
     with open(JSON_URL + "static_data.json") as data:
         gamedata = json.loads(data.read())
@@ -37,3 +38,4 @@ if LOAD_DATA:
         # Load all the static data
         game_data_collection.insert(gamedata)
         
+
