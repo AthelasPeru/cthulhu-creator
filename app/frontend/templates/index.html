@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cthulhu</title>
+</head>
+<body>
+	
+<h1>Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn</h1> 
+
+<h2>{{nombre}}:</h2>
+
+<p>Sabias que {{entidad}} te persigue?</p>
+
+y que 
+
+<ul>
+	{% for amigo in amigos %}
+		<li>{{amigo}}</li>
+	{% endfor %}
+
+	no pueden protegerte?
+</ul>
+
+<h3>Pero además mira</h3>
+
+{% for personaje in personajes %}
+	Mi nombre es: {{personaje.nombre}}
+	y uso: {{personaje.arma}}
+{% endfor %}
+</body>
+</html>
