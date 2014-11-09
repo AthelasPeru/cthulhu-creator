@@ -24,8 +24,8 @@ app.config['STORMPATH_ENABLE_MIDDLE_NAME'] = False
 app.config['STORMPATH_ENABLE_SURNAME'] = True
 app.config['STORMPATH_ENABLE_USERNAME'] = True
 
-app.config['STORMPATH_ENABLE_FACEBOOK'] = True
-app.config['STORMPATH_ENABLE_GOOGLE'] = True
+app.config['STORMPATH_ENABLE_FACEBOOK'] = False
+app.config['STORMPATH_ENABLE_GOOGLE'] = False
 app.config['STORMPATH_SOCIAL'] = {
     'FACEBOOK': {
         'app_id': FACEBOOK_APP_ID,
