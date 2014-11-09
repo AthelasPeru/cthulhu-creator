@@ -108,7 +108,7 @@
 					"cost":"",
 					"permanent_cost":"",
 					"effect":""
-				},
+				}
 			},
 
 			{
@@ -117,7 +117,7 @@
 					"cost":"",
 					"permanent_cost":"",
 					"effect":""
-				},
+				}
 			},			
 
 			{
@@ -126,8 +126,8 @@
 					"cost":"",
 					"permanent_cost":"",
 					"effect":""
-				},
-			},
+				}
+			}
 
 		],
 

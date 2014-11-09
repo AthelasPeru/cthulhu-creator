@@ -27,3 +27,8 @@ def index():
         amigos=['pedro', 'esen', 'karel'],
         personajes=personajes
     )
+
+
+@frontend.route('create')
+def create():
+    return render_template('create.html')
