@@ -34,7 +34,7 @@ data = {
 
 users_collection.update({"user_id": 1}, {"$push": {
     "characters": {
-        "id":4,
+        "id":3,
         "general_data":
             {
                 "complete_name": "Polo",
