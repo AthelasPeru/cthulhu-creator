@@ -105,6 +105,7 @@
 			{
 				"name":"hand_of_colubra",
 				"summon_cost":{
+
 					"cost":"12mp",
 					"permanent_cost":"1d10 sp",
 					"casting_time":"",
@@ -116,6 +117,7 @@
 					"special":"venom 1d10 hp, save CON vs Venom Potency(mp ofcaster) negates effect",
 					"sanity_loss":"0/1d6"
 				},
+
 			},
 
 			{

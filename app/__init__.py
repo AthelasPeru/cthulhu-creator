@@ -7,10 +7,8 @@ app.config['SECRET_KEY'] = SECRET_KEY
 
 
 from frontend.views import frontend
-from api.views import api
+from api.controllers import api
 
 
-print api
-print frontend
 app.register_blueprint(frontend)
 app.register_blueprint(api)

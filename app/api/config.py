@@ -1,3 +1,3 @@
-LOAD_DATA = True
+LOAD_DATA = False
 
-DROP_DATA = True
+DROP_DATA = False
