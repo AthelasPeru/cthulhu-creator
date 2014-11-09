@@ -95,10 +95,26 @@
 		],
 
 		"skills":[
-			"art",
-			"credit_rating",
-			"fast_talk",
-			"shotgun"
+			{
+				"name":"art", 
+				"value":"5%"	
+			},
+			
+			{
+				"name":"credit_rating", 
+				"value":"15%"	
+			},
+
+			{
+				"name":"fast_talk", 
+				"value":"5%"	
+			},
+
+			{
+				"name":"shotgun", 
+				"value":"30%"	
+			}
+
 		],
 
 		"spells":[
