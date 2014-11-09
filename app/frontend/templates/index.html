@@ -2,85 +2,34 @@
 
 
 {% block content %}
+<h1>Eres: {{name}} con ID: {{_id}} y tu mail {{mail}}</h1>
 
 <!-- Character preview Template -->
 <div class="chtulhu-preview" id="chtulhu-preview">
-	<!-- Basic Data Block -->
-	<div class="data-block">
+	
+	<input data-bind="value : singlebookTest">
+	<p data-bind="text : singlebookTest"></p>
 
-		<!-- Name -->
-		<p class="data-block-content data-investigator-name">
-			<span class="data-block-name"></span>
-			<span class="data-block-value"></span>
-		</p>
 
-		<!-- Occupation -->
-		<p class="data-block-content data-occupation">
-			<span class="data-block-name"></span>
-			<span class="data-block-value"></span>
-		</p>
-
-		<!-- Colleges, Degrees -->
-		<p class="data-block-content data-colleges-degrees">
-			<span class="data-block-name"></span>
-			<span class="data-block-value"></span>
-		</p>
-
-		<!-- Birthplace -->
-		<p class="data-block-content data-birthplace">
-			<span class="data-block-name"></span>
-			<span class="data-block-value"></span>
-		</p>
-
-		<!-- Mental Disorders -->
-		<p class="data-block-content data-mental-disorders">
-			<span class="data-block-name"></span>
-			<span class="data-block-value"></span>
-		</p>
-
-		<!-- Sex -->
-		<p class="data-block-content data-sex">
-			<span class="data-block-name"></span>
-			<span class="data-block-value"></span>
-		</p>
-
-		<!-- Age -->
-		<p class="data-block-content age">
-			<span class="data-block-name"></span>
-			<span class="data-block-value"></span>
-		</p>
-
-	</div>
-
-	<!-- Characteristics Block -->
-	<div class="characteristics-block">
-		
-		<!-- Base structure -->
-		
-
-	</div>
-
-	<!-- Sanity, Magic and Hit Points Block -->
-	<div class="smh-points-block">
-		
-		<!-- Sanity, Magic and Hit Points -->
-		
-
-	</div>
-
-	<!-- Skills Block -->
-	<div class="skills-block">
-		
-		<!-- Base skills -->
-		
-		
-		<!-- Add new skill to modify -->
-		
-	</div>
-	<div class="weapons">
-		<!-- Base structure -->
-
-	</div>
-
+	<ul data-bind="foreach : books">
+		<input data-bind="value: $data">
+		<li data-bind="text: $data"></li>
+	</ul>
+	<ul data-bind="foreach : items">
+		<li data-bind="text : $data.name"></li>
+	</ul>
+	<ul data-bind="foreach : languages">
+		<li data-bind="text : $data"></li>
+	</ul>
+	<ul data-bind="foreach : professions">
+		<li data-bind="text : $data.name"></li>
+	</ul>
+	<ul data-bind="foreach : skills">
+		<li data-bind="text : $data"></li>
+	</ul>
+	<ul data-bind="foreach : spells">
+		<li data-bind="text : $data.name "></li>
+	</ul>
 </div>	
 {% endblock %}
+

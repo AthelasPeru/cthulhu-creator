@@ -95,46 +95,118 @@
 		],
 
 		"skills":[
-			"art",
-			"credit_rating",
-			"fast_talk",
-			"shotgun"
+			{
+				"name":"art", 
+				"value":"5%"	
+			},
+			
+			{
+				"name":"credit_rating", 
+				"value":"15%"	
+			},
+
+			{
+				"name":"fast_talk", 
+				"value":"5%"	
+			},
+
+			{
+				"name":"shotgun", 
+				"value":"30%"	
+			}
+
 		],
 
 		"spells":[
 			{
 				"name":"hand_of_colubra",
 				"summon_cost":{
-					"cost":"",
-					"permanent_cost":"",
-					"effect":""
+
+					"cost":"12mp",
+					"permanent_cost":"1d10 sp",
+					"casting_time":"",
+					"effect":"hand of caster turns into venomous snakes",
+					"duration":"1d3+3 rounds",
+					"reach":"8 feets",
+					"attack":"DEXx5",
+					"damage":"1d3",
+					"special":"venom 1d10 hp, save CON vs Venom Potency(mp ofcaster) negates effect",
+					"sanity_loss":"0/1d6"
 				}
+
 			},
 
 			{
 				"name":"seek_heart",
 				"summon_cost":{
-					"cost":"",
+					"cost":"8mp and 6sp",
 					"permanent_cost":"",
-					"effect":""
+					"casting_time":"",
+					"effect":"quickens and implants the will within a corpse to pursue and adquire a fresh hearth",
+					"duration":"STR+CON+POW(of the corpse) minutes",
+					"reach":"100 yards",
+					"attack":"",
+					"damage":"",
+					"special":"",
+					"sanity_loss":""					
 				}
 			},			
-
 			{
 				"name":"voice_of_ra",
 				"summon_cost":{
-					"cost":"",
+					"cost":"5mp and 1sp",
 					"permanent_cost":"",
-					"effect":""
+					"effect":"adds 1d10 APP and adds 20% to bargain, credit rating, fast talk, persuade and psychology",
+					"duration":"24 hours",
+					"reach":"",
+					"attack":"",
+					"damage":"",
+					"special":"",
+					"sanity_loss":""					
 				}
 			}
 
 		],
 
 		"books":[
-			"LIBER-IVONIS",
-			"ELTDOWN-SHARDS",
-			"THE-NECRONOMICON"
+
+			{
+				"name": "LIBER-DAMNATUS",
+				"book_data":{
+					"language":"English, 1647",
+					"author":"Janus Aquarius",
+					"time_to_read":"34",
+					"sanity_lost":"1d4/1d8",
+					"Cthulhu_mythos":"+10",
+					"spells":""
+				
+				}
+			},
+
+			{
+				"name": "ETHICS-OF-YGOR",
+				"book_data":{
+					"language":"Latin",
+					"author":"Unknown",
+					"time_to_read":"13",
+					"sanity_lost":"1d3/1d6",
+					"Cthulhu_mythos":"+4",
+					"spells":""
+				}
+			},
+
+			{
+				"name": "THE-NECRONOMICON",
+				"book_data":{
+					"language":"Greek",
+					"author":"Theodoras Philatea",
+					"time_to_read":"68",
+					"sanity_lost":"1d10/2d10",
+					"Cthulhu_mythos":"+17",
+					"spells":["call/dismiss", "contact deity", "resurrection"]
+				
+				}
+			}		
 
 		]
 
