@@ -1,8 +1,14 @@
 #from models import user_collection, gamedata_collection
 from flask import Blueprint, jsonify, request
-
+from models import users_collection, gamedata_collection
 
 api = Blueprint('api', __name__, url_prefix='/api')
+
+
+@api.route('/v1.0/creator/rules/<string:rules>', methods=['GET'])
+def getRulesData(rules):
+    rulesData = gamedata_collection.find({"_id": rules})
+    return jsonify(rulesData)
 
 
 @api.route('/v1.0/creator', methods=['GET'])
