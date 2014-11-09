@@ -19,13 +19,28 @@ def getRulesData(rules):
         return jsonify(data)
 
 
-@api.route('/v1.0/creator', methods=['GET'])
-def getCharacters():
+@api.route('/v1.0/creator/<int:user_id>', methods=['GET'])
+def getCharacters(user_id):
     """
-    get a list of all the users getCharacters
+    get a list of all the user Characters
     """
 
-    return jsonify({"user": 2, "message": "este es tu id de pj"})
+    _user = users_collection.find({"user_id": user_id})
+    if _user.count() is 0:
+        abort(404)
+
+    for data in _user:
+        try:
+            characters = data['characters']
+            charData = {}
+
+            for key, character in enumerate(characters):
+                
+                charData.update({key +1: character})
+            print "y toda mi lista {}".format(charData)
+            return jsonify(charData)
+        except AttributeError:
+            abort(404)
 
 
 @api.route('/v1.0/creator/<int:character_id>', methods=['GET'])

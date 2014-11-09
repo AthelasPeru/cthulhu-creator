@@ -116,7 +116,7 @@
 					"damage":"1d3",
 					"special":"venom 1d10 hp, save CON vs Venom Potency(mp ofcaster) negates effect",
 					"sanity_loss":"0/1d6"
-				},
+				}
 
 			},
 
@@ -133,9 +133,8 @@
 					"damage":"",
 					"special":"",
 					"sanity_loss":""					
-				},
+				}
 			},			
-
 			{
 				"name":"voice_of_ra",
 				"summon_cost":{
@@ -148,8 +147,8 @@
 					"damage":"",
 					"special":"",
 					"sanity_loss":""					
-				},
-			},
+				}
+			}
 
 		],
 

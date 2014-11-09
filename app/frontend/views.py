@@ -20,11 +20,14 @@ frontend = Blueprint(
 def index():
     userId = user.get_id()
     _user = users_collection.find({"_id": userId})
+    users = users_collection.find().count()
+    print "Numero de usuarios es {}".format(users)
 
     # verificamos que el usuario existe
     if _user.count() is 0:
         data = {
             "_id": userId,
+            "user_id": users + 1,
             "email": user.email,
             "name": user.given_name,
             "surname": user.surname,
@@ -33,7 +36,7 @@ def index():
         }
 
         users_collection.insert(data)
-        return redirect(url_for('index'))
+        return redirect(url_for('.index'))
     # si no existe
     else:
         return render_template(
