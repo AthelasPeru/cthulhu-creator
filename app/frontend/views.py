@@ -4,25 +4,9 @@ frontend = Blueprint(
     'frontend', __name__, template_folder='templates', static_folder='static')
 
 
-personajes = [
-    {
-        'nombre': 'gerald',
-        'arma': 'pistola'
-    },
-    {
-        'nombre': 'esen',
-        'arma': 'hacha'
-    }
-]
-
-
 @frontend.route('/')
 def index():
-    personajes.append({'nombre': 'carlos', 'arma': 'cuchillo'})
-
-    return render_template(
-        'index.html'
-    )
+    return render_template('index.html')
 
 
 @frontend.route('/create')
