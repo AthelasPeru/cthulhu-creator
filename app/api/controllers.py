@@ -17,3 +17,22 @@ def getCharacter(character_id):
 
     else:
         return "No existe ese pj"
+
+
+@api.route('/v1.0/creator/create', methods=['POST'])
+def createCharacter(character_id):
+	return render_template
+
+
+@api.route('/v1.0/creator/<int:character_id>', methods=['PUT'])
+def updateCharacter(character_id):
+
+
+
+@api.route('/v1.0/creator/<int:character_id>', methods=['DELETE'])
+def deleteCharacter(character_id):	
+
+
+
+
+
