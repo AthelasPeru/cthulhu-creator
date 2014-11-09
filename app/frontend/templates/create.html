@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Character Creation</title>
+</head>
+<body>
+	<div class="initial-screen">
+		<ul>
+			<li class="create-button"><button>Create your Investigator</button></li>
+			<li class="character-button"><button> Sarah Connor</button></li>
+			<li class="character-button"><button> Tetsuo Shiba</button></li>
+			<li class="character-button"><button> Deckard</button></li>
+			<li class="new-character-space"><p>. . .</p></li>
+		</ul>
+
+	</div>
+	<div class="core-rolls-screen">
+		<div class="core-rolls-screen-basic-stats">
+			<ul>
+				<li class="core-rolls-screen-basic-stats-name">STR</li>
+				<li class="core-rolls-screen-basic-stats-value">12</li>
+				<li class="core-rolls-screen-basic-stats-name">CON</li>
+				<li class="core-rolls-screen-basic-stats-value">12</li>
+				<li class="core-rolls-screen-basic-stats-name">DEX</li>
+				<li class="core-rolls-screen-basic-stats-value">12</li>
+				<li class="core-rolls-screen-basic-stats-name">APP</li>
+				<li class="core-rolls-screen-basic-stats-value">12</li>
+				<li class="core-rolls-screen-basic-stats-name">POW</li>
+				<li class="core-rolls-screen-basic-stats-value">12</li>
+				<li class="core-rolls-screen-basic-stats-name">SIZ</li>
+				<li class="core-rolls-screen-basic-stats-value">12</li>
+				<li class="core-rolls-screen-basic-stats-name">INT</li>
+				<li class="core-rolls-screen-basic-stats-value">12</li>
+				<li class="core-rolls-screen-basic-stats-name">EDU</li>
+				<li class="core-rolls-screen-basic-stats-value">12</li>	
+			</ul>
+		</div>
+		<div class="core-rolls-screen-generated-stats">
+			<ul>
+				<li class="core-rolls-screen-generated-stats-name">Idea</li>
+				<li class="core-rolls-screen-generated-stats-value">80</li>
+				<li class="core-rolls-screen-generated-stats-name">Know</li>
+				<li class="core-rolls-screen-generated-stats-value">75</li>
+				<li class="core-rolls-screen-generated-stats-name">Luck</li>
+				<li class="core-rolls-screen-generated-stats-value">90</li>
+				<li class="core-rolls-screen-generated-stats-name">HP</li>
+				<li class="core-rolls-screen-generated-stats-value">12</li>
+				<li class="core-rolls-screen-generated-stats-name">SAN</li>
+				<li class="core-rolls-screen-generated-stats-value">54</li>
+				<li class="core-rolls-screen-generated-stats-name">DB</li>
+				<li class="core-rolls-screen-generated-stats-value">none</li>
+			</ul>
+		</div>
+		<div class="core-rolls-screen-age">
+			<label for="Age">Age</label>
+			<input type="number"  id="age" placeholder="105">
+		</div>
+		<div class="core-rolls-bottom">
+			<div class="core-rolls-bottom-left">
+				<ul>
+					<li>
+						<p>Skill Points:320</p>
+					</li>
+					<li>
+						<p>Hobby Points:160</p>
+					</li>
+				</ul>
+			</div>
+			<div class="core-rolls-bottom-right">
+				<div class="core-rolls-bottom-right-roll-dice-button"><button><img src="#" alt="roll-dice">Roll Dices</button></div>
+				<div class="core-rolls-bottom-right-done-button"><button>Done!</button></div>
+			</div>
+		</div>	
+	</div>
+	<div class="occupation-screen">
+		<div class="occupation-screen-choose-section">
+			<label>Choose your Occupation</label>
+			<select name="occupation-select">
+				<option value="...">...</option>
+				<option value="Astronaut">Astronaut</option>
+				<option value="Bartender">Bartender</option>
+				<option value="Communist">Commie</option>
+				<option value="Derelict">Derelict</option>
+				<option value="Entrepreneur">Entrepreneur</option>
+				<option value="Farmer">Farmer</option>
+			</select>
+		</div>
+		<div class="occupation-screen-buttons">
+			<ul>
+				<li><button>Back</button></li>
+				<li><button>Done</button></li>
+				<li><button>Forward</button></li>
+			</ul>
+		</div>
+	</div>
+	<div class="occupational-screen">
+		<div class="occupational-screen-top">
+			<h3>You're a Communist<h3>
+			<p class="occupational-screen-intructions">Allocate the occupational skills points on your preferred skills to costumize this investigator's occupation.</p>
+		</div>
+		<div class="occupational-screen-main">
+			<div class="occupational-screen-main-skills">
+				<ul class="occupational-screen-main-skills-table">
+					<li class="occupational-screen-main-skills-name">Arguing</li>
+					<li class="occupational-screen-main-skills-percentage">75%</li>
+					<li class="occupational-screen-main-skills-name">Molotov Trowing</li>
+					<li class="occupational-screen-main-skills-percentage">60%</li>
+					<li class="occupational-screen-main-skills-name">Burocracy</li>
+					<li class="occupational-screen-main-skills-percentage">99%</li>
+					<li class="occupational-screen-main-skills-name">Ideology</li>
+					<li class="occupational-screen-main-skills-percentage">75%</li>
+					<li class="occupational-screen-main-skills-name">Public Speaking</li>
+					<li class="occupational-screen-main-skills-percentage">15%</li>
+					<li class="occupational-screen-main-skills-name">Comminterm Credit</li>
+					<li class="occupational-screen-main-skills-percentage">23%</li>
+					<li class="occupational-screen-main-skills-name">Socialism
+						<label>specialization</label>
+						<select name="specialized-skills">
+							<option value="marxism">marxism</option>
+							<option value="neo-marxism">neo-marxism</option>
+							<option value="maoism">maoism</option>
+							<option value="Troskian">troskian</option>
+						</select>
+					</li>
+					<li class="occupational-screen-main-skills-percentage">05%</li>
+				</ul>
+			</div>
+			<div class="occupational-screen-main-info">
+				<p>Tap Skill to edit.</p>
+				<p>-Some Skills ask for specific categories,scroll to choose yours.
+				<p>Skill Points:300</p>
+			</div>				
+		</div>
+		<div class="occupational-screen-button">
+			<button>Back</button>
+			<button>Done</button>
+			<button>Forward</button>
+		</div>
+	</div>
+	<div class="hobby-screen">
+		<div class="hobby-screen-instructions">
+			<p>Allocate the hobby skills points on any of the following skills to costumize this investigator's hobbies</p>
+		</div>
+		<div class="hobby-screen-skill-area">
+			<div class="hobby-screen-chosen-skills">
+				<ul>
+					<li class="hobby-screen-chosen-skills-name">Anthropology</li>
+					<li class="hobby-screen-chosen-skills-percentage">45%</li>
+					<li class="hobby-screen-chosen-skills-name">Biology</li>
+					<li class="hobby-screen-chosen-skills-percentage">67%</li>
+					<li class="hobby-screen-chosen-skills-name">Botanics</li>
+					<li class="hobby-screen-chosen-skills-percentage">10%</li>
+					<li class="hobby-screen-chosen-skills-name">Climbing</li>
+					<li class="hobby-screen-chosen-skills-percentage">15%</li>
+					<li class="hobby-screen-chosen-skills-name">Cunning</li>
+					<li class="hobby-screen-chosen-skills-percentage">65%</li>
+					<li class="hobby-screen-chosen-skills-name">Escapism</li>
+					<li class="hobby-screen-chosen-skills-percentage">25%</li>
+					<li class="hobby-screen-chosen-skills-name">Farming</li>
+					<li class="hobby-screen-chosen-skills-percentage">15%</li>
+					<li class="hobby-screen-chosen-skills-name">Yoga</li>
+					<li class="hobby-screen-chosen-skills-percentage">29%</li>
+					<li class="hobby-screen-chosen-skills-name">Xylophone</li>
+					<li class="hobby-screen-chosen-skills-percentage">45%</li>
+				</ul>
+			</div>
+			<div class="hobby-screen-more">
+				<div class="hobby-screen-more-button">
+					<button>More</button>
+				</div>
+				<div class="hobby-screen-more-select">
+					<label for="more skills"></label>
+					<select>
+						<option value="Cooking">Cooking</option>
+						<option value="Martial Arts">Martial Arts</option>
+						<option value="Occlumancy">Occlumancy</option>
+						<option value="Poison Lore">Poison Lore</option>
+						<option value="Robbing">Robbing</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="hobby-screen-bottom">
+			<div class="hobby-screen-bottom-instruccions">
+				<p>Tap skill to edit.</p>
+				<p>-Some skills ask for specific categories,scroll to choose yours.</p>
+				<p>Hobby points:100</p>
+			</div>
+			<div class="hobby-screen-bottom-button">
+				<button>Back</button>
+				<button>Done</button>
+				<button>Forward</button>
+			</div>
+		</div>
+	</div>
+	<div class="investigator-data-screen">
+		<div class="investigator-data-screen-header-button"><button>Ready,Set,Go!</button></div>
+		<div class="investigator-data-screen-main-data">
+			<ul>
+				<li class="investigator-data-screen-main-data-info-fill">
+					<form action="">
+						<label for="name">Investigator's Name:</label>
+						<input id="name" type="text" name ="name" placeholder="Viktor Uroldin" required>
+					</form>
+				</li>
+				<li class="investigator-data-screen-main-data-info-fill">
+					<label for="gender"></label>
+					<select name="gender" id="gender">
+						<option value="...">...</option>
+						<option value="male">Male</option>
+						<option value="female">Female</option>
+						<option value="Transexual">Transexual</option>
+						<option value="Intersexual">Intersexual</option>
+					</select>
+				</li>
+				<li class="investigator-data-screen-main-data-info-static">Communist</li>
+				<li class="investigator-data-screen-main-data-info-select">
+					<label for="College,Degrees">College,Degrees</label>
+					<select>
+						<option value="...">...</option>
+						<option value="Miskatonic University,PHD">Miskatonic University,PHD</option>
+						<option value="Miskatonic University,MSC">Miskatonic University,MSC</option>
+						<option value="Miskatonic University,BA">Miskatonic University, Bachellor's Degree</option>
+						<option value="Miskatonic University,Exp">Miskatonic University, Expelled</option>
+					</select>
+				</li>
+				<li class="investigator-data-screen-main-data-info-fill">
+					<form action="">
+						<label for="Birthplace">Investigator's Birthplace:</label>
+						<input id="Birthplace" type="text" name ="name" placeholder="Lima,Oh" required>
+					</form>
+				</li>
+				<li class="investigator-data-screen-main-data-info-select">
+					<label for="Mental Disorders">Mental Disorders</label>
+					<select>
+						<option value="DSM-V">DSM-V</option>
+						<option value="Drug Induced Psychotic Episode">Drug Induced Psychotic Episode</option>
+						<option value="Anxiety Disorder">Anxiety Disorder</option>
+						<option value="Manic Depression">Manic Depression</option>
+						<option value="Paranoid Schizophrenia">Paranoid Schizophrenia</option>
+					</select>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
