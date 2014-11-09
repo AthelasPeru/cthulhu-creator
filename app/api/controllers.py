@@ -36,4 +36,4 @@ def getCharacter(character_id):
 
 
 # error handlers
-@api.errorhandler(404)
+# @api.errorhandler(404)

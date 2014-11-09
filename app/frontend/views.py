@@ -1,7 +1,7 @@
 from flask import Blueprint, render_template
 
 frontend = Blueprint(
-    'frontend', __name__, template_folder='templates', static_folder='static')
+    'frontend', __name__, template_folder='templates', static_folder='static_front')
 
 
 personajes = [
