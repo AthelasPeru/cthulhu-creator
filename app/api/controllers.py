@@ -5,7 +5,7 @@ from models import users_collection, gamedata_collection
 api = Blueprint('api', __name__, url_prefix='/api')
 
 
-@api.route('/v1.0/creator/rules/<string:rules>', methods=['GET'])
+@api.route('/v1.0/character/rules/<string:rules>', methods=['GET'])
 def getRulesData(rules):
     """
     Get the data for specific rule set
@@ -19,7 +19,7 @@ def getRulesData(rules):
         return jsonify(data)
 
 
-@api.route('/v1.0/creator/<int:user_id>', methods=['GET'])
+@api.route('/v1.0/character/<int:user_id>', methods=['GET'])
 def getCharacters(user_id):
     """
     get a list of all the user Characters
@@ -42,7 +42,7 @@ def getCharacters(user_id):
             abort(404)
 
 
-@api.route('/v1.0/creator/<int:user_id>/<int:character_id>', methods=['GET'])
+@api.route('/v1.0/character/<int:user_id>/<int:character_id>', methods=['GET'])
 def getCharacter(user_id, character_id):
     """
     Get the data of a single character
@@ -61,16 +61,16 @@ def getCharacter(user_id, character_id):
             abort(404)
 
 
-@api.route('/v1.0/creator/save/<int:user_id>', methods=['POST', 'GET'])
+@api.route('/v1.0/character/<int:user_id>', methods=['POST'])
 def addCharacter(user_id):
     """
     add a new character, it requires the id as well
     """
     # este se puede cambiar por jsen si es que lo mandan en json
     if not request.json:
-        characterData = request.args["character"]
-    else:
-        characterData = request.json["character"]
+        abort(400)
+
+    characterData = request.json["character"]
     try:
         users_collection.update({"user_id": user_id}, {
             '$push': {
@@ -80,39 +80,42 @@ def addCharacter(user_id):
 
         return jsonify({"status": "Character Saved"})
     except:
-        return jsonify({"status": "An error occured, sorry!!!"})
+        return jsonify({"status": "An error occured, sorry!!!"}), 500
 
 
-@api.route('/v1.0/creator/update/<int:user_id>/<int:character_id>', methods=['PUT'])
+@api.route('/v1.0/character/<int:user_id>/<int:character_id>', methods=['PUT'])
 def updateCharacter(user_id, character_id):
     """
     Update the data for a character
     """
-    
+
     characterData = request.json["character"]
-    print characterData
+    if not request.json:
+        abort(400)
     try:
         users_collection.update(
             {"user_id": user_id, "characters.id": character_id},
             {"$set": {"characters.$.general_data": characterData}}
 
         )
-        return jsonify({"status":"character updated"})
+        return jsonify({"status": "character updated"})
     except:
-        return jsonify({"status": "An error occured, sorry!!!"})
-   
+        return jsonify({"status": "An error occured, sorry!!!"}), 500
 
 
-
-@api.route('/v1.0/creator/delete/<int:user_id>/<int:character_id>', methods=['DELETE'])
+@api.route('/v1.0/character/<int:user_id>/<int:character_id>', methods=['DELETE'])
 def deleteCharacter(user_id, character_id):
     """
     Delete a specific character
     """
-    users_collection.update(
-        {"user_id": user_id}, {"$pull": {"characters": {"id": character_id}}})
+    try:
 
-    return jsonify({"status": "Character Deleted"})
+        users_collection.update(
+            {"user_id": user_id}, {"$pull": {"characters": {"id": character_id}}})
+
+        return jsonify({"status": "Character Deleted"})
+    except:
+        return jsonify({"status": "An error occured, sorry!!!"}), 500
 
 
 # error handlers
@@ -121,6 +124,13 @@ def notFound(error):
     return make_response(jsonify({'error': 'Not Found'}), 404)
 
 
+@api.errorhandler(403)
+def unauthorized():
+    return make_response(jsonify({'error': 'Unauthorized access'}), 403)
+
+
 @api.errorhandler(401)
 def not_allowed(error):
     return make_response(jsonify({'error': 'Access Restricted'}), 401)
+
+
