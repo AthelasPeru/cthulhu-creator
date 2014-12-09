@@ -31,19 +31,36 @@ data = {
     }
 }
 
+users_collection.insert({"user_id": 1})
 
 users_collection.update({"user_id": 1}, {"$push": {
-    "characters": {
-        "id":3,
+    "characters": {  
+        "id": 0,      
         "general_data":
             {
                 "complete_name": "Polo",
-                "profession": "",
-                "degree": "",
-                "birthplace": "",
-                "mental_disorde": "",
-                "gender": "",
-                "age": ""
+                "profession": "Diletant",
+                "degree": "Master",
+                "birthplace": "Colombia",
+                "mental_disorde": "All of them",
+                "gender": "unknown",
+                "age": "unknown"
+            },
+    }
+}})
+
+users_collection.update({"user_id": 1}, {"$push": {
+    "characters": {  
+        "id": 1,  
+        "general_data":
+            {
+                "complete_name": "Esen",
+                "profession": "Accomodated",
+                "degree": "Landlord",
+                "birthplace": "Peru",
+                "mental_disorde": "All of them",
+                "gender": "23",
+                "age": "21"
             },
     }
 }})

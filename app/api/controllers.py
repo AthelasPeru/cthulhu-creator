@@ -10,7 +10,7 @@ def getRulesData(rules):
     """
     Get the data for specific rule set
     """
-
+    print "got a connection"
     rulesData = gamedata_collection.find({"version": rules})
     if rulesData.count() is 0:
         abort(404)
@@ -95,7 +95,7 @@ def updateCharacter(user_id, character_id):
     try:
         users_collection.update(
             {"user_id": user_id, "characters.id": character_id},
-            {"$set": {"characters.$.general_data": characterData}}
+            {"$set": {"characters.$": characterData}}
 
         )
         return jsonify({"status": "character updated"})
