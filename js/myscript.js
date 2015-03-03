@@ -1,28 +1,81 @@
 $(document).ready(function(){
 
 
-// pagina 01
+// PAGINA 01 //////////////////////////////////////////
+
 
 	$(".page01").on("click", $(".creator_buttom"), function(){
 
-		$(".page03").removeClass("hide");
+		$(".page02").removeClass("hide");
 		$(".page01").addClass("hide");
 		
 	});
 
-// pagina 03
+	// Al dar click sobre un pj creado se lee la data y se abre la pagina 'game-main' del personaje
 
-	$(".page03").on("click", $(".topage04"), function(){
 
-		$(".page05").removeClass("hide");
-		$(".page03").addClass("hide");
+/////////////////////////////////////////////////////////
+// PAGINA 02 
+/////////////////////////////////////////////////////////
+
+	$(".page02 ").on("click", $(".stat-roller"), function(){
+
+
 
 
 	});
 
+	$(".page02 .selection_buttons .topage03").on("click", $(".topage03"), function(){
+
+		$(".page03").removeClass("hide");
+		$(".page02").addClass("hide");
+
+// Al dar click tambien se deben grabar los stats producidos en 'new-character'
+
+	});
+
+	$(".page02 .selection_buttons .topage01").on("click", $(".topage01"), function(){
+
+		$(".page01").removeClass("hide");
+		$(".page02").addClass("hide");
+
+// Al dar click tambien se deben borrar los stats producidos en 'new-character'
+
+	});
 
 
-// pagina 05
+//////////////////////////////////////////////////////////
+// PAGINA 03
+//////////////////////////////////////////////////////////
+
+	$(".page03 .selection_buttons .topage04").on("click", $(".topage04"), function(){
+
+		$(".page05").removeClass("hide");
+		$(".page03").addClass("hide");
+
+// Al dar click se agrega la profesion seleccionada a 'new-character'
+
+	});
+
+	$(".page03 .selection_buttons .topage02").on("click", $(".topage02"), function(){
+
+		$(".page02").removeClass("hide");
+		$(".page03").addClass("hide");
+
+// Al dar click se deben borrar la profesion seleccionada de existir
+
+	});
+
+//////////////////////////////////////////////////////////
+// PAGINA 04
+//////////////////////////////////////////////////////////	
+
+
+
+
+//////////////////////////////////////////////////////////
+// PAGINA 05
+//////////////////////////////////////////////////////////
 
 	$(".page05").on("click", $(".topage06"), function(){
 
