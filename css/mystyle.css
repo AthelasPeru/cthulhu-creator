@@ -3,3 +3,18 @@
 .upper_margin{margin-top:40px!important}
 
 .welcome{margin-bottom:40px}
+
+body{
+	background-image: url("../img/Old_Paper_1_by_mourningstocks.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+
+.main-background{
+	padding: 10px;
+}
+
+.main-links{
+	width: 100%;
+}
