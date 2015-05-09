@@ -25,12 +25,10 @@ def index():
 
 
 @frontend.route('/create')
-@login_required
 def create():
     return render_template('create.html')
 
 
-@frontend.route('/preview')
-@login_required
+@frontend.route('/character')
 def preview():
-    return render_template('preview.html')
+    return render_template('character.html')

@@ -1,0 +1,127 @@
+{% extends 'base.html' %}
+
+{% block title %}
+	Character Sheet
+{% endblock %}
+{% block head_scripts %}
+	{{super()}}
+{% endblock %}
+{% block head_styles %}
+	<link rel="stylesheet" href="{{url_for('frontend.static', filename='css/character.css')}}">
+{% endblock %}
+	
+{% block content %}
+	<main class="wrapper" id="wrapper">
+		<nav class="menu" id="menu">
+			<ul>
+				<li class="nav-option stats sprite sprite-button-stats"><span class="text">Stats</span></li>
+				<li class="nav-option skills sprite sprite-button-skills"><span class="text">Skills</span></li>
+				<li class="nav-option personal  sprite sprite-button-personal"><span class="text">Personal</span></li>
+				<li class="nav-option swag sprite sprite-button-swag"><span class="text">Swag</span></li>
+			</ul>
+		</nav>
+
+		<section class="container left-container">
+				<header>
+					<h2>Name:<span class="name"> Artorious</span></h2>
+				</header>
+				<section></section>
+				<footer></footer>
+		</section>
+		<section class="container right-container">
+			<div class="stats-container">
+				<header><h2>Characteristics & Rolls</h2></header>
+				<section >
+					<ul>
+						<li class="stat">
+							<h3>STR</h3>
+							<span class="number">34</span>
+						</li>
+						<li class="stat">
+							<h3>CON</h3>
+							<span class="number">12</span>
+						</li>
+						<li class="stat">
+							<h3>SIZ</h3>
+							<span class="number">18</span>
+						</li>
+					</ul>
+					<ul>
+						<li class="stat">
+							<h3>DEX</h3>
+							<span class="number">12</span>
+						</li>
+						<li class="stat">
+							<h3>APP</h3>
+							<span class="number">56</span>
+						</li>
+						<li class="stat">
+							<h3>SAN</h3>
+							<span class="number">15</span>
+						</li>
+					</ul>
+					<ul>
+						<li class="stat">
+							<h3>INT</h3>
+							<span class="number">11</span>
+						</li>
+						<li class="stat">
+							<h3>POW</h3>
+							<span class="number">12</span>
+						</li>
+						<li class="stat">
+							<h3>EDU</h3>
+							<span class="number">14</span>
+						</li>
+					</ul>
+					<ul>
+						<li class="stat">
+							<h3>Idea</h3>
+							<span class="number">67</span>
+						</li>
+						<li class="stat">
+							<h3>Luck</h3>
+							<span class="number">78</span>
+						</li>
+						<li class="stat">
+							<h3>Know</h3>
+							<span class="number">67</span>
+						</li>
+					</ul>
+				</section>
+				<footer>
+					<ul>
+						<li class="stat-bonus">
+							<h3>99 - chtulhu mythos:</h3>
+							<span class="number">99</span>
+						</li>
+						<li class="stat-bonus">
+							<h3>Damage Bonus</h3>
+							<span class="number">+1d4</span>
+						</li>
+					</ul>
+				</footer>
+			</div>
+			<div class="notes">
+				<header><h2 class="title">Character Notes</h2></header>
+				<section class="personal-notes"></section>
+				<footer class="money-notes"><h2>Money:</h2>	<div class="cash">
+					<h3>Cash on hand</h3>
+					<span class="number"></span>
+				</div>
+				<div class="savings">
+					<h3>Savings</h3>
+					<span class="number"></span>
+				</div>
+				</footer>
+			</div>
+			
+		</section>
+	</main>
+
+
+{% endblock %}
+	
+{% block footer_scripts %}
+	{{super()}}
+{% endblock %}

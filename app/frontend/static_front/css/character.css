@@ -1,0 +1,190 @@
+@import url("buttons_sprite.css");
+
+/*
+font-family: 'Euphoria Script', cursive;
+font-family: 'Gloria Hallelujah', cursive;
+font-family: 'Special Elite', cursive;
+font-family: 'Shadows Into Light Two', cursive;
+*/
+
+.euphoria-font{
+	font-family: 'Euphoria Script', cursive;
+}
+
+.special-font{
+	font-family: 'Special Elite', cursive;
+}
+
+.gloria-font{
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
+.shadows-font{
+	font-family: 'Shadows Into Light Two', cursive;
+}
+
+body{
+	background-image: url('../img/bg.png');
+	background-size: 100%;
+}
+
+h2, h3, h4, h5{
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper{
+	width: 1024px;
+	height: 768px;
+	margin: 0 auto;
+}
+
+/* BUTTONS */
+
+.nav-option.stats,
+.nav-option.skills,
+.nav-option.personal,
+.nav-option.swag{
+	position: absolute;
+}
+
+.nav-option.stats{
+	top: 10px;
+	left: 10px;
+}
+
+.nav-option.skills{
+	top: 10px;
+	right: 10px;
+}
+
+.nav-option.personal{
+	bottom: 10px;
+	left: 10px;
+}
+
+.nav-option.swag{
+	bottom: 10px;
+	right: 10px;
+}
+
+.nav-option .text{
+	display: block;
+	text-align: center
+}
+
+.nav-option.personal .text,
+.nav-option.swag .text{
+	position: relative;
+	top: -20px;
+}
+
+.nav-option.skills .text,
+.nav-option.stats .text{
+	position: relative;
+	top: 65px;
+}
+
+
+
+/* CONTAINERS */
+
+
+.container{
+    display: block;
+    float: left;
+
+}
+
+.left-container{
+    width: 423px;
+    height: 560px;
+    background-color: blue;
+}
+
+.right-container{
+    width: 548px;
+    height: 560px;
+    
+    
+    background-color: red;
+    background-image: url(../img/bg-stats.png)
+}
+
+
+/* character sheet right side*/
+
+.stats-container{
+	height: 172px;
+  	width: 100%;
+  	padding: 30px 40px 5px;
+  	overflow: hidden;
+}
+
+
+.stats-container section{
+	overflow: hidden;
+}
+.stats-container ul{
+	padding: 0;
+	float: left;
+	width: 25%;
+
+	list-style: none;
+
+}
+
+.stats-container li{
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+.stats-container h3,
+.stats-container .number{
+	display: inline-block;
+	float: left;
+}
+
+.stats-container footer{
+	display: block;
+	overflow: hidden;
+}
+.stats-container footer ul{
+	list-style: none;
+	display: block;
+	width: 100%;
+	margin: 0;
+}
+
+.stats-container footer li{
+	display: block;
+	float: left;
+	width: 50%;
+	
+
+}
+
+.notes{
+	height: 330px;
+  width: 100%;
+  padding: 5px 45px;
+}
+
+.notes .personal-notes{
+	height: 220px;
+}
+
+.cash,
+.savings{
+	width: 50%;
+	float: left;
+}
+
+/* media query para el alto del wrapper*/
+@media only screen and (min-device-height:548px) and (orientation: landscape){
+	
+	.wrapper{
+		padding: 5% 0	;
+	}
+}
