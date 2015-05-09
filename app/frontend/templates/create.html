@@ -49,7 +49,7 @@
 			  		<li class="stat" data-stat="siz"> 
 						<p>size <input type="text"></p>
 			  		</li>
-			  		<li class="stat" data-stat="int"> 
+			  		<li class="stat" data-stat="_int"> 
 						<p>inteligence <input type="text"></p>
 			  		</li>
 			  		<li class="stat" data-stat="edu"> 
@@ -79,15 +79,15 @@
 			  	</ul>
 			</div>
 
-		  	<div class="age-assign">
+		  	<div class="age-assign" data-stat="baseAge">
 		  		<p>Age <input type="number"></p>
 		  	</div>
 
-		  	<p id="skillPoints" class="skill_points total-points">Skill Points <input type="text"></p>
-		  	<p id="hobbyPoints" class="hobby_points total-points">Hobby Points <input type="text"></p>
+		  	<p id="skillPoints" class="skill_points total-points" data-stat="profPoints">Skill Points <input type="text"></p>
+		  	<p id="hobbyPoints" class="hobby_points total-points" data-stat="hobbyPoints">Hobby Points <input type="text"></p>
 
 			<p class="check-roll"><input type="checkbox">Edit Rolls </p>
-			<div class="roll-dice button"><img src="" alt=""></div>
+			<div class="roll-dice button">Roll Dice<img src="" alt=""></div>
 
 			<div class="navegation">
 
@@ -106,36 +106,9 @@
 		<section id="professionSelection" class="hide">
 			<p>Please select an ocupation from the list</p>
 			<select name="" id="testing">
-				<option value="antiquarian">antiquarian</option>
-				<option value="artist">artist</option>
-				<option value="athlete">athlete</option>
-				<option value="author">author</option>
-				<option value="clergyman">clergyman</option>
-				<option value="criminal">criminal</option>
-				<option value="dilettante">dilettante</option>
-				<option value="doctor">doctor</option>
-				<option value="drifter">drifter</option>
-				<option value="engineer">engineer</option>
-				<option value="entertainer">entertainer</option>
-				<option value="farmer">farmer</option>
-				<option value="forester">forester</option>
-				<option value="consultant">consultant</option>
-				<option value="hacker">hacker</option>
-				<option value="journalist">journalist</option>
-				<option value="lawyer">lawyer</option>
-				<option value="militaryo">military_officer</option>
-				<option value="missionary">missionary</option>
-				<option value="musician">musician</option>
-				<option value="parapsychologist">parapsychologist</option>
-				<option value="pilot">pilot</option>
-				<option value="polidetective">police_detective</option>
-				<option value="policeman">policeman</option>
-				<option value="privateinves">private_investigator</option>
-				<option value="professor">professor</option>
-				<option value="soldier">soldier</option>
-				<option value="spokesperson">spokesperson</option>
-				<option value="tribalmemb">tribal_member</option>
-				<option value="zealot">zealot</option>
+				{% for ocupation, data in rules["ocupations"].iteritems()%}
+				<option value="{{ocupation}}">{{data.name}}</option>
+				{% endfor %}
 			</select>
 
 			<div class="navegation">
@@ -149,11 +122,12 @@
 		<section id="professionPointsAssigment" class="hide">
 			<p>Allocate the occupational skill points on the following skills to customise this investigator´s occupation</p>
 
-			<select name="" id="">
+			<form action="">
+				{% set ocupations = rules.ocupations %}
 				
-
-
-			</select>
+				<label for=""></label>
+				<input type="number" value="">
+			</form>
 
 			<div>
 				<p>double click an item to edit it.</p>
@@ -172,11 +146,12 @@
 		<section id="hobbyPointsAssigment" class="hide">
 			<p>Allocate the occupational skill points on the following skills to customise this investigator´s hobbies</p>
 
-			<select name="" id="">
-				
-
-
-			</select>
+			<form action="">
+				{% for skill, value in rules.skills.iteritems() %}
+					<label for="{{skill}}">{{skill | replace("_", " ") | capitalize()}}</label>
+					<input type="number" id="{{skill}}" name="{{skill}}" value="{{value}}">
+				{% endfor %}
+			</form>
 
 			<div >
 				<p>double click an item to edit it.</p>

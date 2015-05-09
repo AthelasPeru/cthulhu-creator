@@ -6,6 +6,7 @@ $(document).ready(function(){
 
 		$("#stat-generator").removeClass("hide");
 		$("#creation-mode").addClass("hide");
+		$("section").removeClass("hide");
 	});
 
 // PAGINA 02 /////////////////////////////////////////

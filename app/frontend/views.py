@@ -24,7 +24,15 @@ def index():
     )
 @frontend.route('/skills')
 def skills():
-	return render_template('skills.html')
+	rules = rules_collection.find_one()
+	rules_page = len(rules["skills"]) / 3
+
+	return render_template(
+		'skills.html',
+		rules=rules,
+		rules_page=rules_page
+
+	)
 
 
 @frontend.route('/personal')

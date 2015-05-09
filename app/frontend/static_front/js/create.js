@@ -5,6 +5,7 @@
 			dex: "",
 			app: "",
 			pow: "",
+			siz: "",
 			_int: "",
 			edu: "",
 		},
@@ -92,6 +93,7 @@
 			this.specialStat("san", "pow");
 			this.specialStat("idea", "_int");
 			this.hp();
+			this.db();
 			this.baseAge();
 			this.profPoints();
 			this.hobbyPoints();
