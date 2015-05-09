@@ -1,0 +1,100 @@
+/* Main */
+
+.wrapper {
+	width: 1024px;
+	margin: auto;
+}
+
+section{
+	overflow: hidden;	
+}
+
+#creation-mode{
+	background-color: yellow;
+}
+
+#stat-generator{
+	background-color: red;
+}
+
+#professionSelection{
+	background-color: yellow;
+}
+
+#professionPointsAssigment{
+	background-color: red;
+}
+
+#hobbyPointsAssigment{
+	background-color: yellow;
+}
+
+#weaponSelect{
+	background-color: red;	
+}
+
+#characterInfo{
+	background-color: yellow;
+}
+
+#finalCheck{
+	background-color: red;
+}
+
+.nav-button{
+	float: left;
+	margin-right: 20px;
+}
+
+/*Stat generator*/
+
+.stat-list{
+	list-style-type:none;
+}
+
+.stat-list  input{
+	width: 50px;
+	float: right;
+}
+
+.total-points, .age-assign, .stat-list{
+	width: 200px;
+}
+
+.total-points input{
+	width: 50px;
+	float: right;
+}
+
+.age-assign input{
+	width: 50px;
+	float: right;
+}
+.check-roll{
+	width: 200px;
+	float: left;
+}
+
+.roll-dice{
+	background-color: green;
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+
+/*Animations	*/
+
+.button:hover{
+	cursor:pointer;
+}
+
+.navegation, .weapon-nav{
+	float: left;
+	clear: both;
+	overflow: hidden;
+	width: 100%;
+}
+
+#ageInfluence{
+	clear: both;
+}
