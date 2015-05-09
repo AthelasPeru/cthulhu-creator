@@ -2,7 +2,7 @@ import json
 import os
 from flask import Blueprint, render_template, redirect, url_for
 from flask.ext.stormpath import StormpathError, login_required, User, login_user, logout_user, user
-from app.api.models import users_collection
+from app.api.models import users_collection, gamedata_collection, rules_collection
 
 
 
@@ -26,7 +26,12 @@ def index():
 
 @frontend.route('/create')
 def create():
-    return render_template('create.html')
+	rules = rules_collection.find_one()
+	
+	return render_template(
+		'create.html',
+		rules=rules
+	)
 
 
 @frontend.route('/character')

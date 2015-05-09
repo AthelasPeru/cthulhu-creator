@@ -47,6 +47,8 @@ users_collection = db.users
 
 gamedata_collection = db.gamedata
 
+rules_collection = db.rules_set
+
 
 SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
 JSON_URL = os.path.join(SITE_ROOT, "json_data/")
