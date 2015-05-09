@@ -22,13 +22,13 @@ def index():
         'index.html'
         
     )
-@frontend.route('/skills')
-def skills():
+@frontend.route('/sheet')
+def character():
 	rules = rules_collection.find_one()
 	rules_page = len(rules["skills"]) / 3
 
 	return render_template(
-		'skills.html',
+		'character.html',
 		rules=rules,
 		rules_page=rules_page
 

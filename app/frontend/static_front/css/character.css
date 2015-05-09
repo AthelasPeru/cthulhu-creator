@@ -253,6 +253,17 @@ footer.main-skills{
 }
 
 
+.page{
+	position: absolute;
+	right: -1024px;
+}
+
+.show{
+	right: 0;
+	left: 0;
+
+}
+
 /* media query para el alto del wrapper*/
 @media only screen and (min-device-height:548px) and (orientation: landscape){
 	

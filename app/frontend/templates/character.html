@@ -8,6 +8,9 @@
 {% endblock %}
 {% block head_styles %}
 	<link rel="stylesheet" href="{{url_for('frontend.static', filename='css/character.css')}}">
+	<link rel="stylesheet" href="{{url_for('frontend.static', filename='css/swag.css')}}">
+	<link rel="stylesheet" href="{{url_for('frontend.static', filename='css/skills.css')}}">
+	<link rel="stylesheet" href="{{url_for('frontend.static', filename='css/personal.css')}}">
 {% endblock %}
 	
 {% block content %}
@@ -20,211 +23,297 @@
 				<li class="nav-option swag sprite sprite-button-swag"><span class="text">Swag</span></li>
 			</ul>
 		</nav>
-
-		<section class="container left-container">
-				<header>
-					<h2 class="elite-font">Name:<span class="name euphoria-font"> Artorious Whistleblock</span></h2>
-					<ul>
-						<li class="special-stat">
-							<h3>Sanity</h3>
-							<span class="gloria-font">45</span>
-						</li>
-						<li class="special-stat">
-							<h3>Magic</h3>
-							<span class="gloria-font">10</span>
-						</li>
-						<li class="special-stat">
-							<h3>Hits</h3>
-							<span class="gloria-font">9</span>
-						</li>
-					</ul>
-				</header>
-				<section class="combat-skills">
-					<h3>Fisticuffs & Weapons</h3>
-					<table>
-						<tr class="main-combat">
-							<td class="combat-skill invisible">Skills title<span class="percentage"></span></td>
-							<td class="per-skil">%</td>
-							<td class="dmg">dmg</td>
-							<td class="att">#att</td>
-							<td class="hp">HP</td>
-						</tr>
-						<tr class="main-combat">
-							<td class="combat-skill">Fist/Punch<span class="percentage">(50%)</span></td>
-							<td class="per-skil">____</td>
-							<td class="dmg">___</td>
-							<td class="att">___</td>
-							<td class="hp">___</td>
-						</tr>
-						<tr class="main-combat">
-							<td class="combat-skill">Fist/Punch<span class="percentage">(50%)</span></td>
-							<td class="per-skil">____</td>
-							<td class="dmg">___</td>
-							<td class="att">___</td>
-							<td class="hp">___</td>
-						</tr>
-						<tr class="main-combat">
-							<td class="combat-skill">Fist/Punch<span class="percentage">(50%)</span></td>
-							<td class="per-skil">____</td>
-							<td class="dmg">___</td>
-							<td class="att">___</td>
-							<td class="hp">___</td>
-						</tr>
-						<tr class="main-combat">
-							<td class="combat-skill">Fist/Punch<span class="percentage">(50%)</span></td>
-							<td class="per-skil">____</td>
-							<td class="dmg">___</td>
-							<td class="att">___</td>
-							<td class="hp">___</td>
-						</tr>
-						<tr class="main-combat">
-							<td class="combat-skill">Fist/Punch<span class="percentage">(50%)</span></td>
-							<td class="per-skil">____</td>
-							<td class="dmg">___</td>
-							<td class="att">___</td>
-							<td class="hp">___</td>
-						</tr>
-						<tr class="main-combat">
-							<td class="combat-skill">Fist/Punch<span class="percentage">(50%)</span></td>
-							<td class="per-skill">____</td>
-							<td class="dmg">___</td>
-							<td class="att">___</td>
-							<td class="hp">___</td>
-						</tr>
+		
+		<section id="mainCharacter" class="main">
+			<section class="container left-container">
+					<header>
+						<h2 class="elite-font">Name:<span class="name euphoria-font"> Artorious Whistleblock</span></h2>
+						<ul>
+							<li class="special-stat">
+								<h3>Sanity</h3>
+								<span class="gloria-font">45</span>
+							</li>
+							<li class="special-stat">
+								<h3>Magic</h3>
+								<span class="gloria-font">10</span>
+							</li>
+							<li class="special-stat">
+								<h3>Hits</h3>
+								<span class="gloria-font">9</span>
+							</li>
+						</ul>
+					</header>
+					<section class="combat-skills">
+						<h3>Fisticuffs & Weapons</h3>
+						<table>
+							<tr class="main-combat">
+								<td class="combat-skill invisible">Skills title<span class="percentage"></span></td>
+								<td class="per-skil">%</td>
+								<td class="dmg">dmg</td>
+								<td class="att">#att</td>
+								<td class="hp">HP</td>
+							</tr>
+							<tr class="main-combat">
+								<td class="combat-skill">Fist/Punch<span class="percentage">(50%)</span></td>
+								<td class="per-skil">____</td>
+								<td class="dmg">___</td>
+								<td class="att">___</td>
+								<td class="hp">___</td>
+							</tr>
+							<tr class="main-combat">
+								<td class="combat-skill">Fist/Punch<span class="percentage">(50%)</span></td>
+								<td class="per-skil">____</td>
+								<td class="dmg">___</td>
+								<td class="att">___</td>
+								<td class="hp">___</td>
+							</tr>
+							<tr class="main-combat">
+								<td class="combat-skill">Fist/Punch<span class="percentage">(50%)</span></td>
+								<td class="per-skil">____</td>
+								<td class="dmg">___</td>
+								<td class="att">___</td>
+								<td class="hp">___</td>
+							</tr>
+							<tr class="main-combat">
+								<td class="combat-skill">Fist/Punch<span class="percentage">(50%)</span></td>
+								<td class="per-skil">____</td>
+								<td class="dmg">___</td>
+								<td class="att">___</td>
+								<td class="hp">___</td>
+							</tr>
+							<tr class="main-combat">
+								<td class="combat-skill">Fist/Punch<span class="percentage">(50%)</span></td>
+								<td class="per-skil">____</td>
+								<td class="dmg">___</td>
+								<td class="att">___</td>
+								<td class="hp">___</td>
+							</tr>
+							<tr class="main-combat">
+								<td class="combat-skill">Fist/Punch<span class="percentage">(50%)</span></td>
+								<td class="per-skill">____</td>
+								<td class="dmg">___</td>
+								<td class="att">___</td>
+								<td class="hp">___</td>
+							</tr>
+							
+						</table>
+					</section>
+					<footer class="main-skills">
+						<h3>Important Skills</h3>
+						<table>
+							<tr class="main-skill">
+								<td class="main-skill-title">Accounting<span class="percentage">(5%)</span></td>
+								<td class="per-skill">___</td>
+							</tr>
+							<tr class="main-skill">
+								<td class="main-skill-title">Accounting<span class="percentage">(5%)</span></td>
+								<td class="per-skill">___</td>
+							</tr>
+							<tr class="main-skill">
+								<td class="main-skill-title">Accounting<span class="percentage">(5%)</span></td>
+								<td class="per-skill">___</td>
+							</tr>
+							<tr class="main-skill">
+								<td class="main-skill-title">Accounting<span class="percentage">(5%)</span></td>
+								<td class="per-skill">___</td>
+							</tr>
+							<tr class="main-skill">
+								<td class="main-skill-title">Accounting<span class="percentage">(5%)</span></td>
+								<td class="per-skill">___</td>
+							</tr>
+							<tr class="main-skill">
+								<td class="main-skill-title">Accounting<span class="percentage">(5%)</span></td>
+								<td class="per-skill">___</td>
+							</tr>
+							<tr class="main-skill">
+								<td class="main-skill-title">Accounting<span class="percentage">(5%)</span></td>
+								<td class="per-skill">___</td>
+							</tr>
+							<tr class="main-skill">
+								<td class="main-skill-title">Accounting<span class="percentage">(5%)</span></td>
+								<td class="per-skill">___</td>
+							</tr>
+							<tr class="main-skill">
+								<td class="main-skill-title">Accounting<span class="percentage">(5%)</span></td>
+								<td class="per-skill">___</td>
+							</tr>
+						</table>		
+					</footer>
+			</section>
+			<section class="container right-container">
+				<div class="stats-container">
+					<header><h2>Characteristics & Rolls</h2></header>
+					<section >
+						<ul>
+							<li class="stat">
+								<h3>STR</h3>
+								<span class="number gloria-font">34</span>
+							</li>
+							<li class="stat">
+								<h3>CON</h3>
+								<span class="number gloria-font">12</span>
+							</li>
+							<li class="stat">
+								<h3>SIZ</h3>
+								<span class="number gloria-font">18</span>
+							</li>
+						</ul>
+						<ul>
+							<li class="stat">
+								<h3>DEX</h3>
+								<span class="number gloria-font">12</span>
+							</li>
+							<li class="stat">
+								<h3>APP</h3>
+								<span class="number gloria-font">56</span>
+							</li>
+							<li class="stat">
+								<h3>SAN</h3>
+								<span class="number gloria-font">15</span>
+							</li>
+						</ul>
+						<ul>
+							<li class="stat">
+								<h3>INT</h3>
+								<span class="number gloria-font">11</span>
+							</li>
+							<li class="stat">
+								<h3>POW</h3>
+								<span class="number gloria-font">12</span>
+							</li>
+							<li class="stat">
+								<h3>EDU</h3>
+								<span class="number gloria-font">14</span>
+							</li>
+						</ul>
+						<ul>
+							<li class="stat">
+								<h3>Idea</h3>
+								<span class="number gloria-font">67</span>
+							</li>
+							<li class="stat">
+								<h3>Luck</h3>
+								<span class="number gloria-font">78</span>
+							</li>
+							<li class="stat">
+								<h3>Know</h3>
+								<span class="number gloria-font">67</span>
+							</li>
+						</ul>
+					</section>
+					<footer>
+						<ul>
+							<li class="stat-bonus">
+								<h3>99 - chtulhu mythos:</h3>
+								<span class="number gloria-font">99</span>
+							</li>
+							<li class="stat-bonus">
+								<h3>Damage Bonus</h3>
+								<span class="number gloria-font">+1d4</span>
+							</li>
+						</ul>
+					</footer>
+				</div>
+				<div class="notes">
+					<header><h2 class="title">Character Notes</h2></header>
+					<section class="personal-notes"></section>
+					<footer class="money-notes"><h2>Money:</h2>	<div class="cash">
+						<h3>Cash on hand</h3>
+						<span class="number gloria-font"></span>
+					</div>
+					<div class="savings">
+						<h3>Savings</h3>
+						<span class="number gloria-font"></span>
+					</div>
+					</footer>
+				</div>
+				
+			</section>
+		</section>
+		<section id="charPersonal" class="page">
+			<div class="personal-sheet elite-font">
+				<div class="page-holder">
+					<div class="page">
+						<h2 class="euphoria-font">Personal Data</h2>
 						
-					</table>
-				</section>
-				<footer class="main-skills">
-					<h3>Important Skills</h3>
-					<table>
-						<tr class="main-skill">
-							<td class="main-skill-title">Accounting<span class="percentage">(5%)</span></td>
-							<td class="per-skill">___</td>
-						</tr>
-						<tr class="main-skill">
-							<td class="main-skill-title">Accounting<span class="percentage">(5%)</span></td>
-							<td class="per-skill">___</td>
-						</tr>
-						<tr class="main-skill">
-							<td class="main-skill-title">Accounting<span class="percentage">(5%)</span></td>
-							<td class="per-skill">___</td>
-						</tr>
-						<tr class="main-skill">
-							<td class="main-skill-title">Accounting<span class="percentage">(5%)</span></td>
-							<td class="per-skill">___</td>
-						</tr>
-						<tr class="main-skill">
-							<td class="main-skill-title">Accounting<span class="percentage">(5%)</span></td>
-							<td class="per-skill">___</td>
-						</tr>
-						<tr class="main-skill">
-							<td class="main-skill-title">Accounting<span class="percentage">(5%)</span></td>
-							<td class="per-skill">___</td>
-						</tr>
-						<tr class="main-skill">
-							<td class="main-skill-title">Accounting<span class="percentage">(5%)</span></td>
-							<td class="per-skill">___</td>
-						</tr>
-						<tr class="main-skill">
-							<td class="main-skill-title">Accounting<span class="percentage">(5%)</span></td>
-							<td class="per-skill">___</td>
-						</tr>
-						<tr class="main-skill">
-							<td class="main-skill-title">Accounting<span class="percentage">(5%)</span></td>
-							<td class="per-skill">___</td>
-						</tr>
-					</table>		
-				</footer>
+						<dl>
+							<dt>Investigator Name:</dt>
+							<dd>Arcturus Whistlebock</dd>
+							<dt>Residence:</dt>
+							<dd>New Have, Alabama
+								Personal Description:
+								Profesional asskicker and lady lover Bad Ass</dd>
+							<dt>Family & Friends:</dt>
+							<dd>Lord Whistlebock (father), Arcturus Jr. ( only son, dead at 13),
+								Stupid Jimmy (brother), Angela Whistlebock (missing wife),
+								Delilah (grand danese)</dd>
+							<dt>Episodes of Insanity:</dt>
+							<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam facilis repudiandae porro expedita?</dd>
+							<dt>Wounds & Injuries:</dt>
+							<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed quis consequuntur hic, perferendis.</dd>
+							<dt>Marks & Scars:</dt>
+							<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim earum delectus totam debitis!</dd>
+						</dl>
+					</div> <!--  /.page -->
+					
+					<div class="page">
+						<h2 class="euphoria-font">Investigator History</h2>
+						
+						<div class="shadows-font">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus possimus omnis magnam esse dolores nemo aperiam quisquam.</p>
+							
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto accusantium mollitia accusamus nobis itaque perspiciatis porro quod ut facilis, dolorem numquam quidem sunt quam natus ipsum ab, illo. Sit, numquam.</p>
+							
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos rerum nostrum sint deserunt cupiditate! Debitis dignissimos ratione id iure assumenda laboriosam eveniet labore recusandae adipisci perferendis repellat repudiandae, quasi minima facere explicabo omnis cupiditate aspernatur quisquam et pariatur, officiis nostrum ab non expedita animi. Magni commodi impedit veniam modi neque veritatis reiciendis quo itaque iure! Optio sed eligendi quibusdam sequi officia. Incidunt inventore vel, rem possimus dolore at vero voluptas.</p>
+							
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit voluptatibus cupiditate quas voluptas doloremque. Totam delectus culpa dolores qui quidem, nostrum tempore molestiae aperiam voluptates aut, pariatur nam natus libero quisquam, iure et minima doloremque nemo maxime est veniam expedita, quos sit officia quaerat. Asperiores iste dolor eius delectus dicta!</p>
+						</div>
+					</div>
+				</div>
+			</div> <!-- /.skills-sheet -->
 		</section>
-		<section class="container right-container">
-			<div class="stats-container">
-				<header><h2>Characteristics & Rolls</h2></header>
-				<section >
+		<section id="charSkills" class="page">
+			<div class="skills-sheet elite-font">
+				<h2>Skills</h2>
+				<div class="lists-holder">
+
 					<ul>
-						<li class="stat">
-							<h3>STR</h3>
-							<span class="number gloria-font">34</span>
-						</li>
-						<li class="stat">
-							<h3>CON</h3>
-							<span class="number gloria-font">12</span>
-						</li>
-						<li class="stat">
-							<h3>SIZ</h3>
-							<span class="number gloria-font">18</span>
-						</li>
-					</ul>
-					<ul>
-						<li class="stat">
-							<h3>DEX</h3>
-							<span class="number gloria-font">12</span>
-						</li>
-						<li class="stat">
-							<h3>APP</h3>
-							<span class="number gloria-font">56</span>
-						</li>
-						<li class="stat">
-							<h3>SAN</h3>
-							<span class="number gloria-font">15</span>
-						</li>
-					</ul>
-					<ul>
-						<li class="stat">
-							<h3>INT</h3>
-							<span class="number gloria-font">11</span>
-						</li>
-						<li class="stat">
-							<h3>POW</h3>
-							<span class="number gloria-font">12</span>
-						</li>
-						<li class="stat">
-							<h3>EDU</h3>
-							<span class="number gloria-font">14</span>
-						</li>
-					</ul>
-					<ul>
-						<li class="stat">
-							<h3>Idea</h3>
-							<span class="number gloria-font">67</span>
-						</li>
-						<li class="stat">
-							<h3>Luck</h3>
-							<span class="number gloria-font">78</span>
-						</li>
-						<li class="stat">
-							<h3>Know</h3>
-							<span class="number gloria-font">67</span>
-						</li>
-					</ul>
-				</section>
-				<footer>
-					<ul>
-						<li class="stat-bonus">
-							<h3>99 - chtulhu mythos:</h3>
-							<span class="number gloria-font">99</span>
-						</li>
-						<li class="stat-bonus">
-							<h3>Damage Bonus</h3>
-							<span class="number gloria-font">+1d4</span>
-						</li>
-					</ul>
-				</footer>
-			</div>
-			<div class="notes">
-				<header><h2 class="title">Character Notes</h2></header>
-				<section class="personal-notes"></section>
-				<footer class="money-notes"><h2>Money:</h2>	<div class="cash">
-					<h3>Cash on hand</h3>
-					<span class="number gloria-font"></span>
-				</div>
-				<div class="savings">
-					<h3>Savings</h3>
-					<span class="number gloria-font"></span>
-				</div>
-				</footer>
-			</div>
+						{% for skill, value in rules.skills | dictsort() %}
 			
+							
+							{% if loop.index < rules_page +1 %}
+								<li>{{skill | replace("_", " ") | capitalize()}} ({{value}}%)<span>___</span></li>
+							{% endif %}
+
+						{% endfor %}
+						
+						
+					</ul>
+					<ul>
+						{% for skill, value in rules.skills | dictsort() %}
+						
+							
+							{% if rules_page < loop.index < (rules_page * 2) + 1  %}
+								<li>{{skill | replace("_", " ") | capitalize()}} ({{value}}%)<span>___</span></li>
+							{% endif %}
+
+						{% endfor %}
+					</ul>
+					<ul>
+						{% for skill, value in rules.skills | dictsort() %}
+						
+							
+							{% if rules_page * 2 < loop.index < rules_page * 4  %}
+								<li>{{skill | replace("_", " ") | capitalize()}} ({{value}}%)<span>___</span></li>
+							{% endif %}
+
+						{% endfor %}
+					</ul>
+					
+					
+			</div> <!-- /.skills-sheet -->
 		</section>
+		<section id="charSwag" class="page"></section>
 	</main>
 
 
