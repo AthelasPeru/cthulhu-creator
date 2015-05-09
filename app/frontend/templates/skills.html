@@ -24,78 +24,41 @@
 		<div class="skills-sheet elite-font">
 			<h2>Skills</h2>
 			<div class="lists-holder">
+
 				<ul>
-					<li>Anthropology (01%)<span>___</span></li>
-					<li>Accounting (10%)<span>___</span></li>
-					<li>Archeology (01%)<span>___</span></li>
-					<li>Art (05%)<span>___</span></li>
-					<li>Astronomy (05%)<span>___</span></li>
-					<li>Bargain (05%)<span>___</span></li>
-					<li>Biology (01%)<span>___</span></li>
-					<li>Chemistry (01%)<span>___</span></li>
-					<li>Climb (00%)<span>___</span></li>
-					<li>Conceal (00%)<span>___</span></li>
-					<li>Craft (00%)<span>___</span></li>
-					<li>Credit Rating (00%)<span>___</span></li>
-					<li>Cthulhu Mythos (00%)<span>___</span></li>
-					<li>Disguise (00%)<span>___</span></li>
-					<li>Dodge (DEXx2)<span>___</span></li>
-					<li>Drive Auto (20%)<span>___</span></li>
-					<li>Electrical Repair (00%)<span>___</span></li>
-					<li>Fast Talk (00%)<span>___</span></li>
-					<li>First Aid (00%)<span>___</span></li>
-					<li>Geology (00%)<span>___</span></li>
-					<li>Hide (00%)<span>___</span></li>
+					{% for skill, value in rules.skills | dictsort() %}
+	
+						
+						{% if loop.index < rules_page +1 %}
+							<li>{{skill | replace("_", " ") | capitalize()}} ({{value}}%)<span>___</span></li>
+						{% endif %}
+
+					{% endfor %}
+					
+					
+				</ul>
+				<ul>
+					{% for skill, value in rules.skills | dictsort() %}
+					
+						
+						{% if rules_page < loop.index < (rules_page * 2) + 1  %}
+							<li>{{skill | replace("_", " ") | capitalize()}} ({{value}}%)<span>___</span></li>
+						{% endif %}
+
+					{% endfor %}
+				</ul>
+				<ul>
+					{% for skill, value in rules.skills | dictsort() %}
+					
+						
+						{% if rules_page * 2 < loop.index < rules_page * 4  %}
+							<li>{{skill | replace("_", " ") | capitalize()}} ({{value}}%)<span>___</span></li>
+						{% endif %}
+
+					{% endfor %}
 				</ul>
 				
-				<ul>
-					<li>Anthropology (01%)<span>___</span></li>
-					<li>Accounting (10%)<span>___</span></li>
-					<li>Archeology (01%)<span>___</span></li>
-					<li>Art (05%)<span>___</span></li>
-					<li>Astronomy (05%)<span>___</span></li>
-					<li>Bargain (05%)<span>___</span></li>
-					<li>Biology (01%)<span>___</span></li>
-					<li>Chemistry (01%)<span>___</span></li>
-					<li>Climb (00%)<span>___</span></li>
-					<li>Conceal (00%)<span>___</span></li>
-					<li>Craft (00%)<span>___</span></li>
-					<li>Credit Rating (00%)<span>___</span></li>
-					<li>Cthulhu Mythos (00%)<span>___</span></li>
-					<li>Disguise (00%)<span>___</span></li>
-					<li>Dodge (DEXx2)<span>___</span></li>
-					<li>Drive Auto (20%)<span>___</span></li>
-					<li>Electrical Repair (00%)<span>___</span></li>
-					<li>Fast Talk (00%)<span>___</span></li>
-					<li>First Aid (00%)<span>___</span></li>
-					<li>Geology (00%)<span>___</span></li>
-					<li>Hide (00%)<span>___</span></li>
-				</ul>
 				
-				<ul>
-					<li>Anthropology (01%)<span>___</span></li>
-					<li>Accounting (10%)<span>___</span></li>
-					<li>Archeology (01%)<span>___</span></li>
-					<li>Art (05%)<span>___</span></li>
-					<li>Astronomy (05%)<span>___</span></li>
-					<li>Bargain (05%)<span>___</span></li>
-					<li>Biology (01%)<span>___</span></li>
-					<li>Chemistry (01%)<span>___</span></li>
-					<li>Climb (00%)<span>___</span></li>
-					<li>Conceal (00%)<span>___</span></li>
-					<li>Craft (00%)<span>___</span></li>
-					<li>Credit Rating (00%)<span>___</span></li>
-					<li>Cthulhu Mythos (00%)<span>___</span></li>
-					<li>Disguise (00%)<span>___</span></li>
-					<li>Dodge (DEXx2)<span>___</span></li>
-					<li>Drive Auto (20%)<span>___</span></li>
-					<li>Electrical Repair (00%)<span>___</span></li>
-					<li>Fast Talk (00%)<span>___</span></li>
-					<li>First Aid (00%)<span>___</span></li>
-					<li>Geology (00%)<span>___</span></li>
-					<li>Hide (00%)<span>___</span></li>
-				</ul>
-			</div>
 		</div> <!-- /.skills-sheet -->
 </main>
 

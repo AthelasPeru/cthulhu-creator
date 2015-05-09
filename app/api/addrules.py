@@ -1,4 +1,5 @@
 import pymongo
+import json
 
 try:
     conn = pymongo.MongoClient()
@@ -15,9 +16,8 @@ db = conn.cthulhu
 # usuarios
 rules_set = db.rules_set
 
-data = {
-	"version": "5.0",
-	"description": "this is a really popular rules set"
-}
+with open("rules.json") as rules:
+	data = rules.read()
+	new_rules =  json.loads(data)
 
-rules_set.insert(data)
+	rules_set.insert(new_rules)
