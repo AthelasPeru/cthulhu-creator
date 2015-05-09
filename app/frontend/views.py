@@ -39,6 +39,10 @@ def character():
 def personal():
 	return render_template('personal.html')
 
+@frontend.route('/swag')
+def swag():
+	return render_template('swag.html')
+
 
 @frontend.route('/create')
 def create():
