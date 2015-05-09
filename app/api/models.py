@@ -1,3 +1,29 @@
+from flask.ext.mongoengine import MongoEngine
+
+mongo = MongoEngine()
+
+
+class Character(mongo.EmbeddedDocument):
+	char_info = mongo.DictField()
+	char_stats = mongo.DictField()
+	char_skills = mongo.DictField()
+	char_attacks = mongo.DictField()
+	char_items = mongo.DictField()
+	char_background = mongo.DictField()
+
+
+class User(mongo.Document):
+	username = mongo.StringField(required=True)
+	stp_id = mongo.StringField()
+	characters = mongo.ListField(mongo.EmbeddedDocumentField(Character))
+
+
+
+class Rules(mongo.DynamicDocument):
+	pass
+
+
+
 import pymongo
 import os
 import json
