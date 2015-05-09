@@ -1,13 +1,16 @@
-<!doctype html>
-<html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cthulhu Creator App</title>
-        <link rel="stylesheet" href="../../../css/create.css" />
-  </head>
+{% extends "base.html" %}
 
-  <body>
+{% block head_styles %}
+	{{ super() }}
+
+{% endblock %}
+
+{% block footer_scripts %}
+	{{ super() }}
+	<script type="text/javascript" src="{{ url_for('frontend.static', filename='js/create.js') }}"></script>
+{% endblock %}
+
+{% block content %}
   	<div class="wrapper">
 
 	  	<section id="creation-mode">
@@ -19,46 +22,46 @@
 	  	<section id="stat-generator">
 
 	  	<ul class="stat-list">
-	  		<li class="stat" data="str"> 
+	  		<li class="stat" data-stat="str"> 
 				<p>strength <input type="text"></p>
 	  		</li>
-	  		<li class="stat" data="con"> 
+	  		<li class="stat" data-stat="con"> 
 				<p>constitution <input type="text"></p>
 	  		</li>
-	  		<li class="stat" data="dex"> 
+	  		<li class="stat" data-stat="dex"> 
 				<p>dexterity <input type="text"></p>
 	  		</li>
-	  		<li class="stat" data="app"> 
+	  		<li class="stat" data-stat="app"> 
 				<p>appearance <input type="text"></p>
 	  		</li>
-	  		<li class="stat" data="pow"> 
+	  		<li class="stat" data-stat="pow"> 
 				<p>power <input type="text"></p>
 	  		</li>
-	  		<li class="stat" data="siz"> 
+	  		<li class="stat" data-stat="siz"> 
 				<p>size <input type="text"></p>
 	  		</li>
-	  		<li class="stat" data="int"> 
+	  		<li class="stat" data-stat="int"> 
 				<p>inteligence <input type="text"></p>
 	  		</li>
-	  		<li class="stat" data="edu"> 
+	  		<li class="stat" data-stat="edu"> 
 				<p>education <input type="text"></p>
 	  		</li>
-	  		<li class="stat" data="idea"> 
+	  		<li class="stat" data-stat="idea"> 
 				<p>idea <input type="text"></p>
 	  		</li>
-	  		<li class="stat" data="know"> 
+	  		<li class="stat" data-stat="know"> 
 				<p>know <input type="text"></p>
 	  		</li>
-	  		<li class="stat" data="luck"> 
+	  		<li class="stat" data-stat="luck"> 
 				<p>luck <input type="text"></p>
 	  		</li>
-	  		<li class="stat" data="hp"> 
+	  		<li class="stat" data-stat="hp"> 
 				<p>hit points <input type="text"></p>
 	  		</li>
-	  		<li class="stat" data="san"> 
+	  		<li class="stat" data-stat="san"> 
 				<p>sanity <input type="text"></p>
 	  		</li>
-	  		<li class="stat" data="db"> 
+	  		<li class="stat" data-stat="db"> 
 				<p>damage bonus <input type="text"></p>
 	  		</li>
 	  	</ul>
@@ -250,4 +253,5 @@
 	  	</section>
 
 	</div>
-  </body>
+  
+{% endblock content %}
