@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+
+{% block title %}
+	Character Sheet
+{% endblock %}
+{% block head_scripts %}
+	{{super()}}
+{% endblock %}
+{% block head_styles %}
+	<link rel="stylesheet" href="{{url_for('frontend.static', filename='css/character.css')}}">
+	<link rel="stylesheet" href="{{url_for('frontend.static', filename='css/personal.css')}}">
+{% endblock %}
+	
+{% block content %}
+<main class="wrapper" id="wrapper">
+		<nav class="menu" id="menu">
+			<ul>
+				<li class="nav-option stats sprite sprite-button-stats"><span class="text">Stats</span></li>
+				<li class="nav-option skills sprite sprite-button-skills"><span class="text">Skills</span></li>
+				<li class="nav-option personal  sprite sprite-button-personal"><span class="text">Personal</span></li>
+				<li class="nav-option swag sprite sprite-button-swag"><span class="text">Swag</span></li>
+			</ul>
+		</nav>
+		<div class="personal-sheet elite-font">
+			<div class="page-holder">
+				<div class="page">
+					<h2 class="euphoria-font">Personal Data</h2>
+					
+					<dl>
+						<dt>Investigator Name:</dt>
+						<dd>Arcturus Whistlebock</dd>
+						<dt>Residence:</dt>
+						<dd>New Have, Alabama
+							Personal Description:
+							Profesional asskicker and lady lover Bad Ass</dd>
+						<dt>Family & Friends:</dt>
+						<dd>Lord Whistlebock (father), Arcturus Jr. ( only son, dead at 13),
+							Stupid Jimmy (brother), Angela Whistlebock (missing wife),
+							Delilah (grand danese)</dd>
+						<dt>Episodes of Insanity:</dt>
+						<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam facilis repudiandae porro expedita?</dd>
+						<dt>Wounds & Injuries:</dt>
+						<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed quis consequuntur hic, perferendis.</dd>
+						<dt>Marks & Scars:</dt>
+						<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim earum delectus totam debitis!</dd>
+					</dl>
+				</div> <!--  /.page -->
+				
+				<div class="page">
+					<h2 class="euphoria-font">Investigator History</h2>
+					
+					<div class="shadows-font">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus possimus omnis magnam esse dolores nemo aperiam quisquam.</p>
+						
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto accusantium mollitia accusamus nobis itaque perspiciatis porro quod ut facilis, dolorem numquam quidem sunt quam natus ipsum ab, illo. Sit, numquam.</p>
+						
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos rerum nostrum sint deserunt cupiditate! Debitis dignissimos ratione id iure assumenda laboriosam eveniet labore recusandae adipisci perferendis repellat repudiandae, quasi minima facere explicabo omnis cupiditate aspernatur quisquam et pariatur, officiis nostrum ab non expedita animi. Magni commodi impedit veniam modi neque veritatis reiciendis quo itaque iure! Optio sed eligendi quibusdam sequi officia. Incidunt inventore vel, rem possimus dolore at vero voluptas.</p>
+						
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit voluptatibus cupiditate quas voluptas doloremque. Totam delectus culpa dolores qui quidem, nostrum tempore molestiae aperiam voluptates aut, pariatur nam natus libero quisquam, iure et minima doloremque nemo maxime est veniam expedita, quos sit officia quaerat. Asperiores iste dolor eius delectus dicta!</p>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+		</div> <!-- /.skills-sheet -->
+</main>
+
+
+{% endblock %}
+	
+{% block footer_scripts %}
+	{{super()}}
+{% endblock %}
