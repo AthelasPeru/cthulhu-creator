@@ -21,19 +21,24 @@ $(document).ready(function(){
 
 	$(".navegation").on("click", $("#back-button"), function(){
 
-// le quita a la seccion anterior hide
-// le da a ella misma hide 
+		$(this).parent().prev().removeClass("hide");
+
+		$(this).parent().addClass("hide");
+
 	});
 
 	$(".navegation").on("click", $("#next-button"), function(){
 
-// le quita a la seccion siguiente hide
-// le da a ella misma hide 
+		$(this).parent().next().removeClass("hide");
+		
+		$(this).parent().addClass("hide");
+
 	});	
 
 	$(".navegation").on("click", $("#cancel-button"), function(){
 
 		$("#creation-mode").removeClass("hide");
+		$(this).parent().addClass("hide");		
 // le da a ella misma hide 
 	});		
 
