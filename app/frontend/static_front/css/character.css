@@ -7,6 +7,22 @@ font-family: 'Special Elite', cursive;
 font-family: 'Shadows Into Light Two', cursive;
 */
 
+.euphoria-font{
+	font-family: 'Euphoria Script', cursive;
+}
+
+.special-font{
+	font-family: 'Special Elite', cursive;
+}
+
+.gloria-font{
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
+.shadows-font{
+	font-family: 'Shadows Into Light Two', cursive;
+}
+
 body{
 	background-image: url('../img/bg.png');
 	background-size: 100%;
