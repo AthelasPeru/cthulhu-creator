@@ -3,7 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Cthulhu Creator</title>
+	<title>{% block title %}
+		
+	{% endblock %}</title>
 	
 	
 
@@ -12,6 +14,13 @@
 		<script type='text/javascript' src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 		<script type='text/javascript' src='http://ajax.aspnetcdn.com/ajax/knockout/knockout-3.0.0.js'></script>
 		<script type='text/javascript' src="{{ url_for('frontend.static', filename='js/vendor/knockout.mapping-latest.js') }}"></script>
+	{% endblock %}
+
+	{% block head_fonts %}
+	<link href='http://fonts.googleapis.com/css?family=Euphoria+Script&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	{% endblock %}
 	{% block head_styles %}
 		

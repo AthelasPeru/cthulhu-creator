@@ -1,0 +1,53 @@
+.sprite {
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-button-personal {
+    width: 67px;
+    height: 67px;
+    background-position: -5px -5px;
+}
+
+.sprite-button-personal:hover {
+    width: 67px;
+    height: 67px;
+    background-position: -82px -5px;
+}
+
+.sprite-button-skills {
+    width: 67px;
+    height: 67px;
+    background-position: -5px -82px;
+}
+
+.sprite-button-skills:hover {
+    width: 67px;
+    height: 67px;
+    background-position: -82px -82px;
+}
+
+.sprite-button-stats {
+    width: 67px;
+    height: 67px;
+    background-position: -159px -5px;
+}
+
+.sprite-button-stats:hover {
+    width: 67px;
+    height: 67px;
+    background-position: -159px -82px;
+}
+
+.sprite-button-swag {
+    width: 67px;
+    height: 67px;
+    background-position: -159px -158px;
+}
+
+.sprite-button-swag:hover {
+    width: 67px;
+    height: 67px;
+    background-position: -236px -5px;
+}
