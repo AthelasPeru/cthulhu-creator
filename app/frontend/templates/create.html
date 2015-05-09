@@ -1,0 +1,253 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cthulhu Creator App</title>
+        <link rel="stylesheet" href="../../../css/create.css" />
+  </head>
+
+  <body>
+  	<div class="wrapper">
+
+	  	<section id="creation-mode">
+	  		<h1>welcome to miskatonic university</h1>
+	  		<div id="random-creator" class="button"><p>create your character</p></div>
+
+	  	</section>
+
+	  	<section id="stat-generator">
+
+	  	<ul class="stat-list">
+	  		<li class="stat" data="str"> 
+				<p>strength <input type="text"></p>
+	  		</li>
+	  		<li class="stat" data="con"> 
+				<p>constitution <input type="text"></p>
+	  		</li>
+	  		<li class="stat" data="dex"> 
+				<p>dexterity <input type="text"></p>
+	  		</li>
+	  		<li class="stat" data="app"> 
+				<p>appearance <input type="text"></p>
+	  		</li>
+	  		<li class="stat" data="pow"> 
+				<p>power <input type="text"></p>
+	  		</li>
+	  		<li class="stat" data="siz"> 
+				<p>size <input type="text"></p>
+	  		</li>
+	  		<li class="stat" data="int"> 
+				<p>inteligence <input type="text"></p>
+	  		</li>
+	  		<li class="stat" data="edu"> 
+				<p>education <input type="text"></p>
+	  		</li>
+	  		<li class="stat" data="idea"> 
+				<p>idea <input type="text"></p>
+	  		</li>
+	  		<li class="stat" data="know"> 
+				<p>know <input type="text"></p>
+	  		</li>
+	  		<li class="stat" data="luck"> 
+				<p>luck <input type="text"></p>
+	  		</li>
+	  		<li class="stat" data="hp"> 
+				<p>hit points <input type="text"></p>
+	  		</li>
+	  		<li class="stat" data="san"> 
+				<p>sanity <input type="text"></p>
+	  		</li>
+	  		<li class="stat" data="db"> 
+				<p>damage bonus <input type="text"></p>
+	  		</li>
+	  	</ul>
+
+	  	<div class="age-assign">
+	  		<p>Age <input type="number"></p>
+	  	</div>
+
+	  	<p id="skillPoints" class="skill_points total-points">Skill Points <input type="text"></p>
+	  	<p id="hobbyPoints" class="hobby_points total-points">Hobby Points <input type="text"></p>
+
+		<p class="check-roll"><input type="checkbox">Edit Rolls </p>
+		<div class="roll-dice button"><img src="" alt=""></div>
+
+		<div class="navegation">
+
+		  	<div id="back-button" class="button nav-button"><p>back</p></div>
+		  	<div id="next-button" class="button nav-button"><p>next</p></div>
+		  	<div id="cancel-button" class="button nav-button"><p>cancel</p></div>	  		  	
+		</div>
+
+		<div id="ageInfluence">este sera un modal q aparecera para ajustar las habiliodades del pj con la edad de este</div>
+
+	  	</section>
+
+		<section id="professionSelection">
+			<p>Please select an ocupation from the list</p>
+			<select name="" id="testing">
+				<option value="antiquarian">antiquarian</option>
+				<option value="artist">artist</option>
+				<option value="athlete">athlete</option>
+				<option value="author">author</option>
+				<option value="clergyman">clergyman</option>
+				<option value="criminal">criminal</option>
+				<option value="dilettante">dilettante</option>
+				<option value="doctor">doctor</option>
+				<option value="drifter">drifter</option>
+				<option value="engineer">engineer</option>
+				<option value="entertainer">entertainer</option>
+				<option value="farmer">farmer</option>
+				<option value="forester">forester</option>
+				<option value="consultant">consultant</option>
+				<option value="hacker">hacker</option>
+				<option value="journalist">journalist</option>
+				<option value="lawyer">lawyer</option>
+				<option value="militaryo">military_officer</option>
+				<option value="missionary">missionary</option>
+				<option value="musician">musician</option>
+				<option value="parapsychologist">parapsychologist</option>
+				<option value="pilot">pilot</option>
+				<option value="polidetective">police_detective</option>
+				<option value="policeman">policeman</option>
+				<option value="privateinves">private_investigator</option>
+				<option value="professor">professor</option>
+				<option value="soldier">soldier</option>
+				<option value="spokesperson">spokesperson</option>
+				<option value="tribalmemb">tribal_member</option>
+				<option value="zealot">zealot</option>
+			</select>
+
+			<div class="navegation">
+			  	<div id="back-button" class="button nav-button"><p>back</p></div>
+			  	<div id="next-button" class="button nav-button"><p>next</p></div>
+			  	<div id="cancel-button" class="button nav-button"><p>cancel</p></div>	  		  	
+			</div>			
+
+		</section>
+
+		<section id="professionPointsAssigment">
+			<p>Allocate the occupational skill points on the following skills to customise this investigator´s occupation</p>
+
+			<select name="" id="">
+				
+
+
+			</select>
+
+			<div>
+				<p>double click an item to edit it.</p>
+				<p>Skill Points <span></span></p>
+				<div class="reset-skill-points"></div>
+
+			</div>
+
+			<div class="navegation">
+			  	<div id="back-button" class="button nav-button"><p>back</p></div>
+			  	<div id="next-button" class="button nav-button"><p>next</p></div>
+			  	<div id="cancel-button" class="button nav-button"><p>cancel</p></div>	  		  	
+			</div>	
+		</section>
+
+		<section id="hobbyPointsAssigment">
+			<p>Allocate the occupational skill points on the following skills to customise this investigator´s hobbies</p>
+
+			<select name="" id="">
+				
+
+
+			</select>
+
+			<div >
+				<p>double click an item to edit it.</p>
+				<p>Skill Points <span></span></p>
+				<div class="reset-skill-points"></div>
+
+			</div>
+
+			<div class="navegation">
+			  	<div id="back-button" class="button nav-button"><p>back</p></div>
+			  	<div id="next-button" class="button nav-button"><p>next</p></div>
+			  	<div id="cancel-button" class="button nav-button"><p>cancel</p></div>	  		  	
+			</div>	
+		</section>
+
+		<section id="weaponSelect">
+			<p>Please select the weapon that your investigator owns</p>
+
+			<select name="" id="">
+				
+
+
+			</select>
+
+			<div class="weapon-nav">
+			  	<div id="add-button" class="button nav-button"><p>add</p></div>
+			  	<div id="remove-button" class="button nav-button"><p>remove</p></div>
+			  	<div id="help-button" class="button nav-button"><p>???</p></div>	
+
+			</div>
+
+			<p>Investigator´s Weapons:</p>
+
+			<input type="text" class="weapon-selected">
+
+			<div class="navegation">
+			  	<div id="back-button" class="button nav-button"><p>back</p></div>
+			  	<div id="next-button" class="button nav-button"><p>next</p></div>
+			  	<div id="cancel-button" class="button nav-button"><p>cancel</p></div>	  		  	
+			</div>	
+		</section>
+
+		<section id="characterInfo">
+
+		  	<ul class="character-data stat-list">
+		  		<li class="stat" data="name"> 
+					<p>Investigator Name: <input type="text"></p>
+		  		</li>
+		  		<li class="stat" data="sex"> 
+					<p>Sex: <input type="text"></p>
+		  		</li>
+		  		<li class="stat" data="occupation"> 
+					<p>Occupation: <input type="text"></p>
+		  		</li>
+		  		<li class="stat" data="degree"> 
+					<p>Collages, Degrees: <input type="text"></p>
+		  		</li>
+		  		<li class="stat" data="birthplace"> 
+					<p>Birthplace: <input type="text"></p>
+		  		</li>
+		  		<li class="stat" data="mentald"> 
+					<p>Mental Disorder: <input type="text"></p>
+		  		</li>
+
+		  	</ul>
+
+			<div class="navegation">
+
+			  	<div id="back-button" class="button nav-button"><p>back</p></div>
+			  	<div id="next-button" class="button nav-button"><p>next</p></div>
+			  	<div id="cancel-button" class="button nav-button"><p>cancel</p></div>	  		  	
+			</div>
+
+	  	</section>
+
+	  	<section id="finalCheck">
+	  		<p>Your new investigator is complete</p>
+			<div>
+				<img src="" alt="">
+				<p>You should spend some time deciding your investigaotr´s background. This can really help to flesh them out and will make them more enjoyable to play</p>
+			</div>
+
+			<div class="navegation">
+
+			  	<div id="back-button" class="button nav-button"><p>back</p></div>
+			  	<div id="finish-button" class="button nav-button"><p>finish</p></div>
+			  	<div id="cancel-button" class="button nav-button"><p>cancel</p></div>	  		  	
+			</div>
+
+	  	</section>
+
+	</div>
+  </body>
