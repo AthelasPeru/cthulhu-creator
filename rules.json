@@ -1,0 +1,178 @@
+{
+	"version": "6.0",
+	"description": "this is a really popular rules set",
+	"ocupations": {
+		"antiquarian": {
+			"name": "Antiquarian",
+			"skills": ["art", "bargain", "craft", "history", "library_use", "other_language", "spot_hidden", "other"]
+		},
+		"artist": {
+			"name": "Artist",
+			"skills":["art", "craft", "fast_talk", "history", "cartography", "psychology", "spot_hidden", "other"]
+		},
+		"athelte": {
+			"name": "Athelte",
+			"skills": ["climb", "dodge", "jump", "ride", "swim", "throw", "other"]
+		},
+		"author": {
+			"name": "Author",
+			"skills":["history", "library_use", "occult", "other_language", "own_language", "persuade", "psychology", "other"]
+		},
+		"clergyman": {
+			"name": "Clergyman",
+			"skills": ["accounting", "history", "library_use", "listen", "other_language", "persuade", "psychology", "other"]
+		},
+		"criminal": {
+			"name": "Criminal",
+			"skills": ["bargain", "disguise", "fast_talk", "hand_gun", "locksmith", "sneak", "spot_hidden", "other"]
+		},
+		"dilettante": {
+			"name": "Dilettante",
+			"skills": ["art", "craft", "credit_rating", "other_language", "ride", "other", "shotgun"]
+		},
+		"doctor_medicine":{
+			"name": "Doctor of Medicine",
+			"skills": ["biology", "credit_rating", "first_aid", "latin", "medicine", "pharmacy", "psychoanalysis", "psychology", "other"]
+		},
+		"drifter":{
+			"name": "Drifter",
+			"skills": ["bargain", "fast_talk", "hide", "listen", "natural_history", "psychology", "sneak", "other"]
+		},
+		"engineer":{
+			"name": "Engineer",
+			"skills": ["chemistry", "electrical_repair", "geology", "library_use", "mechanical_repair", "operate_heavy_machine", "physics", "other"]
+		},
+		"entertainer":{
+			"name": "Entertainer",
+			"skills": ["art", "credit_rating", "disguise", "dodge", "fast_talk", "listen", "psychology", "other"]
+		},
+		"farmer_forester":{
+			"name": "Farmer/Forester",
+			"skills":["craft", "electrical_repair", "first_aid", "mechanical_repair", "natural_history", "operate_heavy_machine", "track", "other"]
+		},
+		"hacker_consultant":{
+			"name": "Hacker/Consultant",
+			"skills":["computer_use", "electrical_repair", "electronics", "fast_talk", "library_use", "other_language", "physics", "other"]
+		},
+		"journalist":{
+			"name": "Journalist",
+			"skills":["fast_talk", "history", "library_use", "own_language", "persuade", "photography", "psychology", "other"]
+		},
+		"lawyer":{
+			"name": "Lawyer",
+			"skills": ["bargain", "credit_rating", "fast_talk", "law", "library_use", "persuade", "psychology", "other"]
+		},
+		"military_officer":{
+			"name": "Military Officer",
+			"skills": ["accounting", "bargain", "credit_rating", "law", "navigate", "persuade", "psychology", "other"]
+		},
+		"misionary":{
+			"name": "Misionary",
+			"skills": ["art", "craft", "first_aid", "mechanical_repair", "medicine", "natural_history", "persuade", "other"]
+		},
+		"musician":{
+			"name": "Musician",
+			"skills": ["art", "bargain", "craft", "fast_talk", "listen", "persuade", "psychology", "other"]
+		},
+		"parapsychologist":{
+			"name": "Parapsychologist",
+			"skills": ["anthropology", "history", "library_use", "occult", "other_language", "photography","psychology", "other"]
+		},
+		"pilot":{
+			"name": "Pilot",
+			"skills": ["astronomy", "electrical_repair", "mechanical_repair", "navigate", "operate_heavy_machine", "physics", "pilot", "other"]
+		},
+		"police_detective":{
+			"name": "Police Detective",
+			"skills": ["bargain", "fast_talk", "law", "listen", "persuade", "psychology", "spot_hidden", "other"]
+		},
+		"policeman":{
+			"name": "Policeman",
+			"skills": ["dodge", "fast_talk", "first_aid", "grapple", "law", "psychology", "special_police"]
+		},
+		"private_investigator":{
+			"name": "Private Investigator",
+			"skills": ["bargain", "fast_talk", "law", "library_use", "locksmith", "photography", "psychology", "other"]
+		},
+		"professor":{
+			"name": "Professor",
+			"skills": ["bargain", "credit_rating", "library_use", "other_language", "persuade", "psychology", "professor_special"]
+		},
+		"soldier":{
+			"name": "Soldier",
+			"skills": ["dodge", "first_aid", "hide", "listen", "mechanical_repair", "rifle", "sneak", "other"]
+		},
+		"spokesperson":{
+			"name": "Spokesperson",
+			"skills": ["credit_rating", "disguise", "dodge", "fast_talk", "persuade", "psychology", "other"]
+		},
+		"tribal_member": {
+			"name": "Tribal  Member",
+			"skills": ["bargain", "listen", "natural_history", "occult", "spot_hidden", "swim", "throw", "other"]
+		},
+		"zealot":{
+			"name": "Zealot",
+			"skills": ["conceal", "hide", "library_use", "persuade", "psychology", "zealot_special"]
+		}
+	},
+	"skills":{
+		"accounting": 10,
+		"anthropology": 1,
+		"arqueology": 1,
+		"art": 5,
+		"astronomy": 1,
+		"bargain": 5,
+		"biology": 1,
+		"chemistry": 1,
+		"climb": 40,
+		"conceal": 15,
+		"craft": 5,
+		"credit_rating": 15,
+		"cthulhu_mythos": 0,
+		"disguise": 1,
+		"dodge": 0,
+		"drive_auto": 20,
+		"electrical_repair": 10,
+		"fast_talk": 5,
+		"first_aid": 30,
+		"geology": 1,
+		"hide": 10,
+		"history": 20,
+		"jump": 25,
+		"law": 5,
+		"library_use": 25,
+		"listen": 25,
+		"locksmith": 1,
+		"martial_arts": 1,
+		"mechanical_repair": 20,
+		"medicine": 5,
+		"natural_history": 10,
+		"navigate": 10,
+		"occult": 5,
+		"operate_heavy_machine": 1,
+		"other_language": 1,
+		"own_language": 0,
+		"persuade": 15,
+		"pharmacy": 1,
+		"photography": 10,
+		"physics": 1,
+		"pilot": 1,
+		"psychoanalysis": 1,
+		"psychology": 5,
+		"ride": 5,
+		"sneak": 10,
+		"spot_hidden": 25,
+		"swim": 25,
+		"throw": 25,
+		"track": 10,
+		"hand_gun": 20,
+		"machine_gun": 15,
+		"rifle": 25,
+		"shotgun": 30,
+		"smg": 15,
+		"fist": 50,
+		"grapple": 25,
+		"head": 10,
+		"kick": 25
+	}
+}

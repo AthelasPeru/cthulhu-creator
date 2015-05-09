@@ -1,0 +1,55 @@
+.euphoria-font{
+	font-family: 'Euphoria Script', cursive;
+}
+
+.shadows-font{
+	font-family: 'Shadows Into Light Two', cursive;
+}
+
+.personal-sheet{
+	padding-top: 3em;
+	background: url(../img/bg-personal-uncut.png) no-repeat center top/100%;
+}
+
+.page-holder{
+	margin:0 5%;
+}
+
+.page-holder:after{
+	content:"";
+	display: table;
+	clear: both;
+}
+
+.page{
+	width: 46%;
+	margin:2%;
+	float: left;
+}
+
+.page .shadows-font
+{
+	font-size: 14px;
+}
+.page h2{
+	text-align: center;
+	font-size: 35px;
+}
+
+.page dt{
+	font-size: 15px;
+}
+
+.page dd{
+	font-family: 'Shadows Into Light Two', cursive;
+	font-size: 14px;
+	margin: 0;
+}
+
+.page dt{
+	font-size: 15px;
+	font-family: 'Special Elite', cursive;
+
+}
+
+

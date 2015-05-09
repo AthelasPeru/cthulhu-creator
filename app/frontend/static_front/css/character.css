@@ -94,7 +94,7 @@ h2, h3, h4, h5{
 
 /* CONTAINERS */
 .number{
-	color: blue;
+	color:rgb(41, 29, 135);
 }
 
 .container{
@@ -122,9 +122,7 @@ h2, h3, h4, h5{
 /* character sheet right side*/
 
 .stats-container{
-	height: 172px;
-  	width: 100%;
-  	padding: 30px 40px 5px;
+  	padding: 30px 10px 0px 50px;
   	overflow: hidden;
 }
 
@@ -136,7 +134,7 @@ h2, h3, h4, h5{
 	padding: 0;
 	float: left;
 	width: 25%;
-
+	margin: 0;
 	list-style: none;
 
 }
@@ -150,7 +148,10 @@ h2, h3, h4, h5{
 .stats-container h3,
 .stats-container .number{
 	display: inline-block;
-	float: left;
+}
+
+.stats-container h3:after{
+	content:":";
 }
 
 .stats-container footer{
@@ -162,6 +163,7 @@ h2, h3, h4, h5{
 	display: block;
 	width: 100%;
 	margin: 0;
+	font-size: 13px;
 }
 
 .stats-container footer li{
@@ -173,9 +175,10 @@ h2, h3, h4, h5{
 }
 
 .notes{
-	height: 330px;
+  height: 330px;
   width: 100%;
   padding: 5px 45px;
+  margin: 40px  0 0 0;
 }
 
 .notes .personal-notes{
@@ -199,8 +202,7 @@ h2, h3, h4, h5{
 
 .main-combat{
 	width: 100%;
-	float: left;
-	display: block;
+	text-align: center;
 }
 
 .combat-skills ul{
@@ -236,6 +238,13 @@ h2, h3, h4, h5{
 	width: 100%;
 	overflow: hidden;
 }
+
+footer.main-skills{
+	float: right;
+	margin: 20px 100px;
+}
+
+
 
 .main-skill-title, 
 .main-skill .per-skill{

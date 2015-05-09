@@ -1,0 +1,60 @@
+/* veamos */
+.euphoria-font{
+	font-family: 'Euphoria Script', cursive;
+}
+
+.elite-font{
+	font-family: 'Special Elite', cursive;
+}
+
+.gloria-font{
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
+.shadows-font{
+	font-family: 'Shadows Into Light Two', cursive;
+}
+
+.skills-sheet{
+	padding-top: 3em;
+	background: url(../img/bg-skills-uncut.png) no-repeat center top/100%;
+}
+
+.skills-sheet h2{
+	font-size: 30px;
+	text-decoration: underline;
+	margin: 0 0 2% 7%;
+	-webkit-transform: rotate(-4deg);
+	-ms-transform: rotate(-4deg);
+	-o-transform: rotate(-4deg);
+	transform: rotate(-4deg);
+}
+
+.lists-holder{
+	margin:4% 10% 5% 7%;
+	font-size: 15px;
+}
+
+.lists-holder:after{
+	content:"";
+	display: table;
+	clear: both;
+}
+
+.lists-holder ul{
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 33.333333333%;
+	list-style: none;
+}
+
+.lists-holder li{
+	margin-left: .5em;
+	margin-right: .5em;
+	margin-bottom: .5em;
+}
+
+.lists-holder span{
+	float: right;
+}
