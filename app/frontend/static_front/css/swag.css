@@ -1,0 +1,56 @@
+.euphoria-font{
+	font-family: 'Euphoria Script', cursive;
+}
+
+.shadows-font{
+	font-family: 'Shadows Into Light Two', cursive;
+}
+
+.swag-sheet{
+	padding-top: 3em;
+	background: url(../img/bg-swag-uncut.png) no-repeat center top/100%;
+}
+
+
+.page-holder{
+	margin:3.6% 10% 0;
+}
+
+.page-holder:after{
+	content:"";
+	display: table;
+	clear: both;
+}
+
+.page:first-of-type{
+	width: 46%;
+	margin:2%;
+	float: left;
+}
+
+.page:last-of-type{
+	width: 40%;
+	margin:2%;
+	float: right;
+	position:relative;
+	left:60px;
+	top: -3px;
+	-webkit-transform:rotate(2.2deg);
+}
+
+.page .shadows-font
+{
+	font-size: 14px;
+}
+.page h2{
+	text-align: left;
+	font-size: 20px;
+}
+
+.page ul{
+	margin: 0;
+	padding: 0;
+
+}
+
+

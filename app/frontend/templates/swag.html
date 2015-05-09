@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% block title %}
+	Character Sheet
+{% endblock %}
+{% block head_scripts %}
+	{{super()}}
+{% endblock %}
+{% block head_styles %}
+	<link rel="stylesheet" href="{{url_for('frontend.static', filename='css/character.css')}}">
+	<link rel="stylesheet" href="{{url_for('frontend.static', filename='css/swag.css')}}">
+{% endblock %}
+	
+{% block content %}
+<main class="wrapper" id="wrapper">
+		<nav class="menu" id="menu">
+			<ul>
+				<li class="nav-option stats sprite sprite-button-stats"><span class="text">Stats</span></li>
+				<li class="nav-option skills sprite sprite-button-skills"><span class="text">Skills</span></li>
+				<li class="nav-option personal  sprite sprite-button-personal"><span class="text">Personal</span></li>
+				<li class="nav-option swag sprite sprite-button-swag"><span class="text">Swag</span></li>
+			</ul>
+		</nav>
+		<div class="swag-sheet elite-font">
+			<div class="page-holder shadows-font">
+				<div class="page">
+					<h2>Adventuring Gear * Possesions</h2>
+					<ul>
+						<li>Boots of ass-kicking</li>
+						<li>Trusty Jane (Shotgun)</li>
+						<li>Rope, lots of rope</li>
+						<li>Medikit ( Whisky and Jerky )</li>
+						<li>Well Trimmed Moustache</li>
+						<li>Stuff</li>
+						<li>More Stuff</li>
+						<li>Even More Stuff</li>
+						<li>Yo Mamma</li>
+					</ul>
+
+					<h2>Entities Encountered</h2>
+					<ul>
+						<li>Cthulhu Nyarhotep * Yo Mamma</li>
+					</ul>
+
+					<h2>Magical Artifacts</h2>
+					<ul>
+						<li>The Necronomicon</li>
+					</ul>
+					
+				</div> <!--  /.page -->
+				
+				<div class="page">
+					<h2>Investigator History</h2>
+					
+					<div class="shadows-font">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus possimus omnis magnam esse dolores nemo aperiam quisquam.</p>
+						
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto accusantium mollitia accusamus nobis itaque perspiciatis porro quod ut facilis, dolorem numquam quidem sunt quam natus ipsum ab, illo. Sit, numquam.</p>
+						
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos rerum nostrum sint deserunt cupiditate! Debitis dignissimos ratione id iure assumenda laboriosam eveniet labore recusandae adipisci perferendis repellat repudiandae, quasi minima facere explicabo omnis cupiditate aspernatur quisquam et pariatur, officiis nostrum ab non expedita animi. Magni commodi impedit veniam modi neque veritatis reiciendis quo itaque iure! Optio sed eligendi quibusdam sequi officia. Incidunt inventore vel, rem possimus dolore at vero voluptas.</p>
+						
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit voluptatibus cupiditate quas voluptas doloremque. Totam delectus culpa dolores qui quidem, nostrum tempore molestiae aperiam voluptates aut, pariatur nam natus libero quisquam, iure et minima doloremque nemo maxime est veniam expedita, quos sit officia quaerat. Asperiores iste dolor eius delectus dicta!</p>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+		</div> <!-- /.skills-sheet -->
+</main>
+
+
+{% endblock %}
+	
+{% block footer_scripts %}
+	{{super()}}
+{% endblock %}
