@@ -11,7 +11,7 @@ font-family: 'Shadows Into Light Two', cursive;
 	font-family: 'Euphoria Script', cursive;
 }
 
-.special-font{
+.elite-font{
 	font-family: 'Special Elite', cursive;
 }
 
@@ -26,6 +26,11 @@ font-family: 'Shadows Into Light Two', cursive;
 body{
 	background-image: url('../img/bg.png');
 	background-size: 100%;
+	font-family: 'Special Elite', cursive;
+}
+
+ul{
+	list-style: none;
 }
 
 h2, h3, h4, h5{
@@ -88,7 +93,9 @@ h2, h3, h4, h5{
 
 
 /* CONTAINERS */
-
+.number{
+	color: blue;
+}
 
 .container{
     display: block;
@@ -99,7 +106,7 @@ h2, h3, h4, h5{
 .left-container{
     width: 423px;
     height: 560px;
-    background-color: blue;
+    /*background-color: blue;*/
 }
 
 .right-container{
@@ -107,7 +114,7 @@ h2, h3, h4, h5{
     height: 560px;
     
     
-    background-color: red;
+    /*background-color: red;*/
     background-image: url(../img/bg-stats.png)
 }
 
@@ -180,6 +187,62 @@ h2, h3, h4, h5{
 	width: 50%;
 	float: left;
 }
+
+.special-stat{
+	width: 33%;
+	float: left;
+}
+
+.special-stat span{
+	color: #900;
+}
+
+.main-combat{
+	width: 100%;
+	float: left;
+	display: block;
+}
+
+.combat-skills ul{
+	margin: 0;
+	padding: 0 0 0 5px;
+	overflow: hidden;
+}
+
+.combat-skill{
+	
+
+	display: inline-block;
+	float: left;
+}
+
+.invisible{
+	color: rgba(255,255,255,0);
+}
+
+.main-combat .per-skill,,
+.main-combat .dmg,
+.main-combat .att,
+.main-combat .hp{
+	width: 15%;
+
+}
+
+.percentage{
+	/*float: left;*/
+}
+
+.main-skill{
+	width: 100%;
+	overflow: hidden;
+}
+
+.main-skill-title, 
+.main-skill .per-skill{
+	display: inline-block;
+	float: left;
+}
+
 
 /* media query para el alto del wrapper*/
 @media only screen and (min-device-height:548px) and (orientation: landscape){
