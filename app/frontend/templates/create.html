@@ -6,7 +6,7 @@
 	<title></title>
 
 
-
+	<script type='text/javascript' src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 
 	<link rel="stylesheet" href="../static_front/css/create.css">
 
@@ -17,13 +17,14 @@
 <body>
   	<div class="wrapper">
 
-	  	<section id="creation-mode">
+	  	<section id="creation-mode" class="">
 	  		<h1>welcome to miskatonic university</h1>
+	  		
 	  		<div id="random-creator" class="button"><p>create your character</p></div>
 
 	  	</section>
 
-	  	<section id="stat-generator " class="hide">
+	  	<section id="stat-generator" class="hide">
 			<div>
 			  	<ul class="stat-list">
 			  		<li class="stat" data-stat="str"> 
@@ -90,15 +91,18 @@
 			<div class="navegation">
 
 			  	<div id="back-button" class="button nav-button"><p>back</p></div>
+
 			  	<div id="next-button" class="button nav-button"><p>next</p></div>
+			  	
 			  	<div id="cancel-button" class="button nav-button"><p>cancel</p></div>	  		  	
+			
 			</div>
 
 			<div id="ageInfluence">este sera un modal q aparecera para ajustar las habiliodades del pj con la edad de este</div>
 
 	  	</section>
 
-		<section id="professionSelection">
+		<section id="professionSelection" class="hide">
 			<p>Please select an ocupation from the list</p>
 			<select name="" id="testing">
 				<option value="antiquarian">antiquarian</option>
@@ -141,7 +145,7 @@
 
 		</section>
 
-		<section id="professionPointsAssigment">
+		<section id="professionPointsAssigment" class="hide">
 			<p>Allocate the occupational skill points on the following skills to customise this investigator´s occupation</p>
 
 			<select name="" id="">
@@ -164,7 +168,7 @@
 			</div>	
 		</section>
 
-		<section id="hobbyPointsAssigment">
+		<section id="hobbyPointsAssigment" class="hide">
 			<p>Allocate the occupational skill points on the following skills to customise this investigator´s hobbies</p>
 
 			<select name="" id="">
@@ -187,7 +191,7 @@
 			</div>	
 		</section>
 
-		<section id="weaponSelect">
+		<section id="weaponSelect" class="hide">
 			<p>Please select the weapon that your investigator owns</p>
 
 			<select name="" id="">
@@ -214,7 +218,7 @@
 			</div>	
 		</section>
 
-		<section id="characterInfo">
+		<section id="characterInfo" class="hide">
 
 		  	<ul class="character-data stat-list">
 		  		<li class="stat" data="name"> 
@@ -247,7 +251,7 @@
 
 	  	</section>
 
-	  	<section id="finalCheck">
+	  	<section id="finalCheck" class="hide">
 	  		<p>Your new investigator is complete</p>
 			<div>
 				<img src="" alt="">
