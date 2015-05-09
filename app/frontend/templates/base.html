@@ -4,19 +4,29 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Cthulhu Creator</title>
-	<link rel="stylesheet" href="">
-	<script type='text/javascript' src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	
+	
 
-	<script type='text/javascript' src='http://ajax.aspnetcdn.com/ajax/knockout/knockout-3.0.0.js'></script>
-	<script type='text/javascript' src="{{ url_for('frontend.static', filename='js/vendor/knockout.mapping-latest.js') }}"></script>
+	
+	{% block head_scripts %}
+		<script type='text/javascript' src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script type='text/javascript' src='http://ajax.aspnetcdn.com/ajax/knockout/knockout-3.0.0.js'></script>
+		<script type='text/javascript' src="{{ url_for('frontend.static', filename='js/vendor/knockout.mapping-latest.js') }}"></script>
+	{% endblock %}
+	{% block head_styles %}
+		
+	{% endblock %}
+	
+
 
 </head>
 <body>
 	
 		{% block content %} {% endblock %}
 	
-	
-	<!-- Scripts -->
-	<script type="text/javascript" src="{{ url_for('frontend.static', filename='js/main.js') }}"></script>
+	{% block footer_scripts %}
+		<!-- Scripts -->
+		<script type="text/javascript" src="{{ url_for('frontend.static', filename='js/main.js') }}"></script>
+	{% endblock %}
 </body>
 </html>

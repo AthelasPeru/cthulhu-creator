@@ -16,36 +16,12 @@ frontend = Blueprint(
 
 @frontend.route('/')
 @frontend.route('/index')
-@login_required
 def index():
-    userId = user.get_id()
-    _user = users_collection.find({"_id": userId})
-    users = users_collection.find().count()
-    print "Numero de usuarios es {}".format(users)
-
-    # verificamos que el usuario existe
-    if _user.count() is 0:
-        data = {
-            "_id": userId,
-            "user_id": users + 1,
-            "email": user.email,
-            "name": user.given_name,
-            "surname": user.surname,
-            "username": user.username,
-            "fullname": user.given_name + ' ' + user.surname
-        }
-
-        users_collection.insert(data)
-        return redirect(url_for('.index'))
-    # si no existe
-    else:
-        return render_template(
-            'index.html',
-            _id=userId,
-            mail=user.email,
-            name=user.full_name,
-            
-        )
+    
+    return render_template(
+        'index.html'
+        
+    )
 
 
 @frontend.route('/create')
