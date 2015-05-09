@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+
+{% block title %}
+	Character Sheet
+{% endblock %}
+{% block head_scripts %}
+	{{super()}}
+{% endblock %}
+{% block head_styles %}
+	<link rel="stylesheet" href="{{url_for('frontend.static', filename='css/character.css')}}">
+	<link rel="stylesheet" href="{{url_for('frontend.static', filename='css/skills.css')}}">
+{% endblock %}
+	
+{% block content %}
+<main class="wrapper" id="wrapper">
+		<nav class="menu" id="menu">
+			<ul>
+				<li class="nav-option stats sprite sprite-button-stats"><span class="text">Stats</span></li>
+				<li class="nav-option skills sprite sprite-button-skills"><span class="text">Skills</span></li>
+				<li class="nav-option personal  sprite sprite-button-personal"><span class="text">Personal</span></li>
+				<li class="nav-option swag sprite sprite-button-swag"><span class="text">Swag</span></li>
+			</ul>
+		</nav>
+		<div class="skills-sheet elite-font">
+			<h2>Skills</h2>
+			<div class="lists-holder">
+				<ul>
+					<li>Anthropology (01%)<span>___</span></li>
+					<li>Accounting (10%)<span>___</span></li>
+					<li>Archeology (01%)<span>___</span></li>
+					<li>Art (05%)<span>___</span></li>
+					<li>Astronomy (05%)<span>___</span></li>
+					<li>Bargain (05%)<span>___</span></li>
+					<li>Biology (01%)<span>___</span></li>
+					<li>Chemistry (01%)<span>___</span></li>
+					<li>Climb (00%)<span>___</span></li>
+					<li>Conceal (00%)<span>___</span></li>
+					<li>Craft (00%)<span>___</span></li>
+					<li>Credit Rating (00%)<span>___</span></li>
+					<li>Cthulhu Mythos (00%)<span>___</span></li>
+					<li>Disguise (00%)<span>___</span></li>
+					<li>Dodge (DEXx2)<span>___</span></li>
+					<li>Drive Auto (20%)<span>___</span></li>
+					<li>Electrical Repair (00%)<span>___</span></li>
+					<li>Fast Talk (00%)<span>___</span></li>
+					<li>First Aid (00%)<span>___</span></li>
+					<li>Geology (00%)<span>___</span></li>
+					<li>Hide (00%)<span>___</span></li>
+				</ul>
+				
+				<ul>
+					<li>Anthropology (01%)<span>___</span></li>
+					<li>Accounting (10%)<span>___</span></li>
+					<li>Archeology (01%)<span>___</span></li>
+					<li>Art (05%)<span>___</span></li>
+					<li>Astronomy (05%)<span>___</span></li>
+					<li>Bargain (05%)<span>___</span></li>
+					<li>Biology (01%)<span>___</span></li>
+					<li>Chemistry (01%)<span>___</span></li>
+					<li>Climb (00%)<span>___</span></li>
+					<li>Conceal (00%)<span>___</span></li>
+					<li>Craft (00%)<span>___</span></li>
+					<li>Credit Rating (00%)<span>___</span></li>
+					<li>Cthulhu Mythos (00%)<span>___</span></li>
+					<li>Disguise (00%)<span>___</span></li>
+					<li>Dodge (DEXx2)<span>___</span></li>
+					<li>Drive Auto (20%)<span>___</span></li>
+					<li>Electrical Repair (00%)<span>___</span></li>
+					<li>Fast Talk (00%)<span>___</span></li>
+					<li>First Aid (00%)<span>___</span></li>
+					<li>Geology (00%)<span>___</span></li>
+					<li>Hide (00%)<span>___</span></li>
+				</ul>
+				
+				<ul>
+					<li>Anthropology (01%)<span>___</span></li>
+					<li>Accounting (10%)<span>___</span></li>
+					<li>Archeology (01%)<span>___</span></li>
+					<li>Art (05%)<span>___</span></li>
+					<li>Astronomy (05%)<span>___</span></li>
+					<li>Bargain (05%)<span>___</span></li>
+					<li>Biology (01%)<span>___</span></li>
+					<li>Chemistry (01%)<span>___</span></li>
+					<li>Climb (00%)<span>___</span></li>
+					<li>Conceal (00%)<span>___</span></li>
+					<li>Craft (00%)<span>___</span></li>
+					<li>Credit Rating (00%)<span>___</span></li>
+					<li>Cthulhu Mythos (00%)<span>___</span></li>
+					<li>Disguise (00%)<span>___</span></li>
+					<li>Dodge (DEXx2)<span>___</span></li>
+					<li>Drive Auto (20%)<span>___</span></li>
+					<li>Electrical Repair (00%)<span>___</span></li>
+					<li>Fast Talk (00%)<span>___</span></li>
+					<li>First Aid (00%)<span>___</span></li>
+					<li>Geology (00%)<span>___</span></li>
+					<li>Hide (00%)<span>___</span></li>
+				</ul>
+			</div>
+		</div> <!-- /.skills-sheet -->
+</main>
+
+
+{% endblock %}
+	
+{% block footer_scripts %}
+	{{super()}}
+{% endblock %}

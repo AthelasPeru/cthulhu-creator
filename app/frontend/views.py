@@ -22,6 +22,14 @@ def index():
         'index.html'
         
     )
+@frontend.route('/skills')
+def skills():
+	return render_template('skills.html')
+
+
+@frontend.route('/personal')
+def personal():
+	return render_template('personal.html')
 
 
 @frontend.route('/create')

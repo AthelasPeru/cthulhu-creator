@@ -1,0 +1,76 @@
+/* Main */
+
+.wrapper {
+	width: 1024px;
+	margin: auto;
+}
+
+section{
+	overflow: hidden;	
+	border: 1px blue solid;
+}
+
+
+.nav-button{
+	float: left;
+	margin-right: 20px;
+}
+
+.hide{
+	display: none;
+}
+
+/*Stat generator*/
+
+.stat-list{
+	list-style-type:none;
+	width: 25%;
+	float: left;
+}
+
+.stat-list  input{
+	width: 50px;
+	float: right;
+}
+
+.total-points, .age-assign{
+	width: 200px;
+}
+
+.total-points input{
+	width: 50px;
+	float: right;
+}
+
+.age-assign input{
+	width: 50px;
+	float: right;
+}
+.check-roll{
+	width: 200px;
+	float: left;
+}
+
+.roll-dice{
+	background-color: green;
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+
+/*Animations	*/
+
+.button:hover{
+	cursor:pointer;
+}
+
+.navegation, .weapon-nav{
+	float: left;
+	clear: both;
+	overflow: hidden;
+	width: 100%;
+}
+
+#ageInfluence{
+	clear: both;
+}
