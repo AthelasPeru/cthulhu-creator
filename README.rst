@@ -1,6 +1,75 @@
 Chtulhu Character creator
 ==========================
 
+Repositorio
+--------------
+
+Este repositorio está tanto en github como en bitbucket, trabajamos en hithub para poder romper el límite de 5 personas que tiene biutbucket.
+El único cambio que eso significa, es que debemos dejar de entender que hay **2** repositorios remotos:
+
+- **origin**: bitbucket
+- **github**: github
+
+Entonces, para trabajar con github simplemente hacemos::
+    
+    git pull github master<u otro branchname>
+
+    git add --all && git commit -m 'mensaje de commit kool'
+
+    git push github master <u otro nombre de branch>
+
+
+
+Correr el app 
+---------------
+
+requisitos
++++++++++++++
+
+- python 2.7
+- pip
+- virtualenv
+
+
+Ejecutar el virtualenv
+++++++++++++++++++++++++++
+
+si no lo hemos creado aún::
+	
+	$ cd <carpeta raíz del proyecto>
+	$ virtualenv venv 
+
+
+una vez ya tenemos venv en nuestro proyecto
+++++++++++++++++++++++++++++++++++++++++++++++
+
+	$ source /venv/bin/activate
+
+	# vemos que aparece (venv) al lado izq de nuestro **prompt** de terminal
+
+Instalamos los requisitos::
+  
+    $ pip install -r requirements.txt
+
+
+Ejecutar la aplicacion
++++++++++++++++++++++++
+
+en la carpeta raiz del proyecto nos aseguramos de que esté el archivo *manager.py* y ejecutamos::
+
+	python manager.py runserver
+
+	# deberiamos tener ahora el server corriendo en el `puerto 5000 <http://localhost:5000>`_
+
+
+Trabajar el frontend
+++++++++++++++++++++++
+
+Estamos trabajando en frontend en el template *app/frontend/templates/character.html*
+
+El **css** está en *app/frontend/static_front/css*
+
+
 API Routes
 -------------
 
